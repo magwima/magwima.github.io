@@ -25,7 +25,7 @@ window.PORTFOLIO = {
     teaser: "Vacuum trucks with attitude. Dave, Dasz and Rosie tear through a scrapyard circuit, suck up everything on the track and ram each other until it spills out again. Race, jump, win. Built in Unity with models from Blender.",
     image: "assets/scrap-racers.jpg",                  // the poster (any shape; it's shown whole)
     progress: 35,                                      // percent, shown as a progress bar
-    milestones: ["Dave's truck and first track", "AI rivals", "Rosie and Dasz", "More tracks"],
+    milestones: ["Dave's truck and first track", "Rival racers", "Rosie and Dasz", "More tracks"],
     milestoneDone: 1,
     follow: "https://mxyzptlk.artstation.com/", followText: "Follow on ArtStation",
     prototype: "vacuum"                                // id of a playable prototype in `games`, or ""
@@ -86,9 +86,9 @@ window.PORTFOLIO = {
           { title: "Characters first", text: "Three drivers with their own personalities, Dave, Rosie and Dasz. I modelled each truck in Blender and textured them in Heavy Paint." },
           { title: "Start small", text: "One truck (Dave) and one track, so the core loop of driving, collecting and bumping could be tested before adding more." },
           { title: "A camera that reads the track", text: "A chase camera behind the truck, inspired by Subway Surfers, so the next checkpoint and the scrap ahead are always clear." },
-          { title: "Prototype in the browser", text: "A quick browser version to try the feel of racing, collecting and AI rivals before building the full game in Unity." }
+          { title: "Prototype in the browser", text: "A quick browser version to try the feel of racing, collecting and rival racers before building the full game in Unity." }
         ],
-        next: "The Unity version: AI rivals, Rosie and Dasz on track, and more circuits."
+        next: "The Unity version: rival racers, Rosie and Dasz on track, and more circuits."
       },
       play: "https://magwima.github.io/Vaccum-Racer/", repo: "https://github.com/magwima/Vaccum-Racer"
     }  ],
