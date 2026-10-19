@@ -96,6 +96,12 @@ window.PORTFOLIO = {
   /* Showreel at the top of the 3D section. Any YouTube link works; leave youtube "" to hide it. */
   showreel: { title: "Showreel", year: 2024, note: "A showreel of my 3D models.", youtube: "https://youtu.be/_7HarJloqvs" },
 
+  /* Turntables: a clay render and the finished render of the same model (silent .mp4 loops) */
+  turntables: [
+    { title: "Gunship", note: "Hard-surface vehicle", clay: "assets/turntables/gunship-clay.mp4", final: "assets/turntables/gunship-final.mp4", poster: "assets/turntables/gunship-final.jpg", finalLabel: "Textured" },
+    { title: "Scout ship", note: "Stylised vehicle", clay: "assets/turntables/scout-clay.mp4", final: "assets/turntables/scout-final.mp4", poster: "assets/turntables/scout-final.jpg", finalLabel: "Toon shaded" }
+  ],
+
   /* 3D models: export from Blender as .glb (File → Export → glTF 2.0, format "glTF Binary") into assets/models/ */
   models: [
     { title: "Dasz's truck", note: "Scrap Racers", src: "assets/models/dasz-truck.glb", tools: "Modelled in Blender", orbit: "-140deg 76deg 92%", big: true },
@@ -116,10 +122,15 @@ window.PORTFOLIO = {
   ],
 
   /* Sketchbook: concept art, sketches, mood boards, wireframes. Put images in assets/sketches/ (any shape). */
+  // video: an .mp4 that loops silently (src is its still image)
   sketchbook: [
-    { src: "assets/scrap-racers.jpg", title: "Scrap Racers", note: "Key art" },
-    { src: "assets/koi-poster.jpg", title: "Koi Quest", note: "Poster" },
-    { src: "assets/covers/eldonia-1.jpg", title: "The Kingdom of Eldonia", note: "Title art, Heavy Paint" }
+    { src: "assets/sketches/dunk.jpg", title: "Dunk", note: "Digital painting" },
+    { src: "assets/sketches/dunk-sketch.jpg", video: "assets/sketches/dunk-sketch.mp4", title: "Dunk", note: "First motion sketch" },
+    { src: "assets/sketches/fox-mask.jpg", title: "Fox mask", note: "Digital painting" },
+    { src: "assets/sketches/gentleman.jpg", title: "The gentleman", note: "Portrait" },
+    { src: "assets/sketches/one-on-one.jpg", title: "One on one", note: "Character illustration" },
+    { src: "assets/sketches/street-singer.jpg", title: "Street singer", note: "Character illustration" },
+    { src: "assets/sketches/dilemma.jpg", video: "assets/sketches/dilemma.mp4", title: "Dilemma", note: "2D animation, painted backgrounds", wide: true }
   ],
 
   /* Tools and other things I've built */
