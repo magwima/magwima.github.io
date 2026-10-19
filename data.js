@@ -10,26 +10,24 @@ window.PORTFOLIO = {
   role: "Game designer & developer",
   place: "Rzeszów, Poland",
   intro: "I make games for the browser and for Unity, model in Blender, and build learning tools for my English students. Some projects are mine from the first sketch to the last line, some are made with friends, and some I direct while AI writes the code.",
-  email: "hello@example.com",                      // ← your email
-  socials: {
-    instagram: "https://instagram.com/",            // ← your profile links
-    facebook: "https://facebook.com/",
-    artstation: "https://artstation.com/",
-    github: "https://github.com/magwima",
-    itch: "https://itch.io/"
+  email: "mikekahuhu@gmail.com",
+  socials: {                                        // add instagram, facebook or itch the same way; empty ones are hidden
+    artstation: "https://mxyzptlk.artstation.com/",
+    github: "https://github.com/magwima"
   },
 
   /* The poster at the top of the page. Replace image with your own poster (portrait, about 1200 × 1600). */
   comingSoon: {
-    title: "Vacuum Racer",
-    edition: "Unity edition",
+    title: "Scrap Racers",
+    edition: "Unity · coming soon",
     status: "In production",
-    teaser: "Kart racing with vacuum trucks. Suck up every ball on the track, ram your rivals until they spill theirs, and boost over the ramps. Rebuilt from the ground up in Unity, with models made in Blender.",
-    image: "assets/coming-soon.jpg",
-    progress: 35,                                    // percent, shown as a progress bar
+    teaser: "Vacuum trucks with attitude. Dave, Dasz and Rosie tear through a scrapyard circuit, suck up everything on the track and ram each other until it spills out again. Race, jump, win. Built in Unity with models from Blender.",
+    image: "assets/scrap-racers.jpg",                  // the poster (any shape; it's shown whole)
+    progress: 35,                                      // percent, shown as a progress bar
     milestones: ["Dave's truck and first track", "AI rivals", "Rosie and Dasz", "More tracks"],
     milestoneDone: 1,
-    follow: "https://instagram.com/"                 // where people can follow progress
+    follow: "https://mxyzptlk.artstation.com/", followText: "Follow on ArtStation",
+    prototype: "vacuum"                                // id of a playable prototype in `games`, or ""
   },
 
   /* kind: "solo" | "ai" | "collab"     engine: "Browser" | "Unity" | ...
@@ -48,33 +46,30 @@ window.PORTFOLIO = {
     },
     {
       id: "vacuum", title: "Vacuum Racer", year: 2026, kind: "ai", engine: "Browser · 3D",
-      summary: "Pick Dave, Rosie or Dasz and race vacuum trucks across Dusty Dunes, Canyon Twist and Scrapyard Night. Installs on your phone and plays offline.",
+      summary: "The browser prototype of Scrap Racers. Pick Dave, Rosie or Dasz and race vacuum trucks across Dusty Dunes, Canyon Twist and Scrapyard Night. Installs on your phone and plays offline.",
       role: "Game design, characters and levels. Built with Claude as the browser prototype of the Unity game.",
       tools: ["Claude", "Three.js", "PWA"],
       images: ["assets/covers/vacuum-1.jpg", "assets/covers/vacuum-2.jpg"],
       play: "https://magwima.github.io/Vaccum-Racer/", repo: "https://github.com/magwima/Vaccum-Racer"
     },
     {
-      id: "koi", title: "Koi Quest", year: 2026, kind: "solo", engine: "Unity · 3D",
+      id: "koi", title: "Koi Quest: Reef Adventure", year: 2026, kind: "solo", engine: "Unity · 3D",
       summary: "A third-person underwater adventure. Steer a koi through the reef, dash past jellyfish and sharks, and fight back with bubble shots. My undergraduate thesis game at UITM Rzeszów.",
       role: "Everything: design, Unity programming in C#, level building and UI.",
       tools: ["Unity", "C#", "Blender"],
-      images: [], art: "koi",                         // ← add screenshots, e.g. "assets/covers/koi-1.jpg"
-      unity: "",                                      // ← your play.unity.com link
+      images: ["assets/covers/koi-1.jpg", "assets/covers/koi-2.jpg"],   // full poster: assets/koi-poster.jpg
+      unity: "https://play.unity.com/en/games/9616cf4a-6756-4f5a-a918-d318ec580c23/koi-quest-reef-adventure",
       repo: "https://github.com/magwima/Koi-Quest--A-3D-Action-Adventure-Game"
     },
     {
-      id: "inferno", title: "Inferno", year: 2025, kind: "collab", engine: "Unity · 3D",
-      summary: "A team action game with mutant brawlers, a wasp warrior and a ruined city. Made with fellow students.",   // ← check this description
-      role: "Team member. Write what you made here: models, code, levels.",
-      tools: ["Unity", "Blender"],
-      team: "Made with the Inferno team",              // ← name your teammates here
-      images: [], art: "inferno",
-      itch: "",                                        // ← the itch.io page
-      play: "",                                        // ← itch.io embed link, if the game runs in the browser
-      repo: "https://github.com/Shaaylmao/InfernoTeamProject"
-    }
-  ],
+      id: "eldonia", title: "The Kingdom of Eldonia", year: "Demo", kind: "collab", engine: "Windows · 2D pixel art",
+      summary: "A pixel-art platformer. As the heir of a knight family you gather magic crystals to lift the curse on your homeland, using a Time-Shift watch to travel into the past near the Statue of the Angel.",
+      role: "Game assets, painted in Heavy Paint.",
+      tools: ["Heavy Paint", "Pixel art"],
+      team: "Indo-Bulgarian League: Shaay, IvanSI139, Vorqen and me (Kahuhu)",
+      images: ["assets/covers/eldonia-1.jpg"],
+      itch: "https://shaaylmao.itch.io/the-kingdom-of-eldonia"   // Windows download, so it opens on itch.io
+    }  ],
 
   /* 3D models: export from Blender as .glb (File → Export → glTF 2.0, format "glTF Binary") into assets/models/ */
   models: [

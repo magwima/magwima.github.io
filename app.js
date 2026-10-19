@@ -53,11 +53,11 @@
   /* ---------- coming soon ---------- */
   const C = D.comingSoon;
   $("[data-soon-img]").src = C.image;
-  text("[data-soon-title]", C.title); text("[data-soon-edition]", C.edition); text("[data-soon-teaser]", C.teaser); text("[data-soon-status]", C.status);
+  text("[data-soon-title]", C.title); $("[data-soon-img]").alt = `${C.title} poster`; text("[data-soon-edition]", C.edition); text("[data-soon-teaser]", C.teaser); text("[data-soon-status]", C.status);
   const pr = $("[data-soon-progress]"); pr.innerHTML = `<span style="--p:${clamp(C.progress)}%"></span>`; pr.setAttribute("aria-label", `About ${clamp(C.progress)}% done`);
   fill("[data-soon-milestones]", C.milestones.map((m, i) => `<li class="${i < C.milestoneDone ? "done" : i === C.milestoneDone ? "now" : ""}">${esc(m)}${i === C.milestoneDone ? " (working on it now)" : ""}</li>`).join(""));
-  const proto = D.games.find(g => g.id === "vacuum");
-  fill("[data-soon-actions]", link(C.follow, "Follow the progress", "btn btn-solid") + (proto && proto.play ? `<button class="btn" type="button" data-play="${proto.id}">${I.play}Play the browser version</button>` : ""));
+  const proto = D.games.find(g => g.id === C.prototype);
+  fill("[data-soon-actions]", link(C.follow, C.followText || "Follow the progress", "btn btn-solid") + (proto && proto.play ? `<button class="btn" type="button" data-play="${proto.id}">${I.play}Play the prototype</button>` : ""));
   function clamp(v) { return Math.max(0, Math.min(100, +v || 0)); }
 
   /* ---------- games ---------- */
@@ -70,7 +70,7 @@
   const actions = g => [
     g.play ? `<button class="btn btn-small btn-solid" type="button" data-play="${g.id}">${I.play}Play</button>` : "",
     link(g.unity, "Play on Unity", "btn btn-small btn-solid", I.out),
-    link(g.itch, "itch.io", "btn btn-small", I.out),
+    link(g.itch, g.play || g.unity ? "itch.io" : "Get it on itch.io", g.play || g.unity ? "btn btn-small" : "btn btn-small btn-solid", I.out),
     `<button class="btn btn-small" type="button" data-details="${g.id}">About this game</button>`
   ].join("");
   const grid = $("[data-grid]");
@@ -78,7 +78,7 @@
     <article class="card ${g.featured ? "featured" : ""}" data-kind="${g.kind}" data-engine="${esc(g.engine)}">
       ${shotsHTML(g, g.featured)}
       <div class="card-body">
-        <div class="card-top"><h3>${esc(g.title)}</h3><span class="year">${esc(g.year)}</span></div>
+        <div class="card-top"><h3>${esc(g.title)}</h3>${g.year ? `<span class="year">${esc(g.year)}</span>` : ""}</div>
         <p class="engine">${esc(g.engine)}</p>
         <p class="sum">${esc(g.summary)}</p>
         <div class="card-actions">${actions(g)}</div>
@@ -98,7 +98,7 @@
 
   // filters
   const groups = [["all", "All", () => true], ["ai", "Made with AI", g => g.kind === "ai"], ["solo", "Solo", g => g.kind === "solo"], ["collab", "Team projects", g => g.kind === "collab"],
-    ["unity", "Unity", g => /unity/i.test(g.engine)], ["browser", "Play in browser", g => !!g.play]].filter(([k, , f]) => k === "all" || D.games.some(f));
+    ["unity", "Unity", g => /unity/i.test(g.engine)], ["browser", "Play in browser", g => !!(g.play || g.unity)]].filter(([k, , f]) => k === "all" || D.games.some(f));
   const fbar = $("[data-filters]");
   fbar.innerHTML = groups.map(([k, label, f], i) => `<button type="button" role="tab" aria-selected="${i === 0}" data-f="${k}">${label}<span>${D.games.filter(f).length}</span></button>`).join("");
   fbar.addEventListener("click", e => {
@@ -136,9 +136,9 @@
           <dt>My role</dt><dd>${esc(g.role)}</dd>
           ${g.team ? `<dt>Team</dt><dd>${esc(g.team)}</dd>` : ""}
           <dt>Made with</dt><dd>${esc((g.tools || []).join(", "))}</dd>
-          <dt>Year</dt><dd>${esc(g.year)}</dd>
+          ${g.year ? `<dt>Year</dt><dd>${esc(g.year)}</dd>` : ""}
         </dl>
-        <div class="card-actions">${[g.play ? `<button class="btn btn-solid" type="button" data-play="${g.id}">${I.play}Play</button>` : "", link(g.unity, "Play on Unity", "btn btn-solid", I.out), link(g.itch, "itch.io page", "btn", I.out), link(g.page, "Project page", "btn", I.out), link(g.repo, "Source on GitHub", "btn", I.out)].join("")}</div>
+        <div class="card-actions">${[g.play ? `<button class="btn btn-solid" type="button" data-play="${g.id}">${I.play}Play</button>` : "", link(g.unity, "Play on Unity", "btn btn-solid", I.out), link(g.itch, "Get it on itch.io", g.play || g.unity ? "btn" : "btn btn-solid", I.out), link(g.page, "Project page", "btn", I.out), link(g.repo, "Source on GitHub", "btn", I.out)].join("")}</div>
       </div>`;
     details.showModal();
   });
