@@ -71,6 +71,9 @@ window.PORTFOLIO = {
       itch: "https://shaaylmao.itch.io/the-kingdom-of-eldonia"   // Windows download, so it opens on itch.io
     }  ],
 
+  /* Showreel at the top of the 3D section. Any YouTube link works; leave youtube "" to hide it. */
+  showreel: { title: "Showreel", year: 2024, note: "An older reel of my 3D work. More on ArtStation.", youtube: "https://youtu.be/_7HarJloqvs" },
+
   /* 3D models: export from Blender as .glb (File → Export → glTF 2.0, format "glTF Binary") into assets/models/ */
   models: [
     { title: "Stary", note: "Skater from Jazda!", src: "assets/models/skater-stary.glb", tools: "Built in code" },

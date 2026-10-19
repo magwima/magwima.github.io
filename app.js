@@ -145,6 +145,24 @@
   details.addEventListener("click", e => { if (e.target === details || e.target.closest("[data-close-details]")) details.close(); });
   player.addEventListener("click", e => { if (e.target === player) closePlayer(); });
 
+  /* ---------- showreel: a still with a play button; YouTube loads only when clicked ---------- */
+  const R = D.showreel, ytId = R && (String(R.youtube).match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/) || [])[1];
+  if (ytId) {
+    const reel = $("[data-reel]"); reel.hidden = false;
+    reel.innerHTML = `
+      <button class="reel-still" type="button" aria-label="Play ${esc(R.title)}">
+        <img src="https://i.ytimg.com/vi/${ytId}/maxresdefault.jpg" alt="" loading="lazy" onerror="if(this.dataset.f){this.style.visibility='hidden'}else{this.dataset.f=1;this.src='https://i.ytimg.com/vi/${ytId}/hqdefault.jpg'}">
+        <span class="reel-play" aria-hidden="true">${I.play}</span>
+      </button>
+      <div class="reel-cap"><b>${esc(R.title)}</b>${R.year ? `<span>${esc(R.year)}</span>` : ""}<p>${esc(R.note || "")}</p>${link("https://www.youtube.com/watch?v=" + ytId, "Watch on YouTube", "btn btn-small", I.out)}</div>`;
+    $(".reel-still", reel).addEventListener("click", e => {
+      const f = document.createElement("iframe");
+      f.src = `https://www.youtube-nocookie.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1`;
+      f.title = R.title; f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"; f.allowFullscreen = true;
+      e.currentTarget.replaceWith(f);
+    });
+  }
+
   /* ---------- 3D models ---------- */
   fill("[data-models]", D.models.map(m => `
     <figure class="model">
