@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Michael Kagwima – CV</title>
+<style>
+@font-face { font-family: "Bricolage"; src: url(../assets/fonts/bricolage-grotesque-latin-700-normal.woff2); font-weight: 700; }
+@font-face { font-family: "Bricolage"; src: url(../assets/fonts/bricolage-grotesque-latin-800-normal.woff2); font-weight: 800; }
+@font-face { font-family: "Bricolage"; src: url(../assets/fonts/bricolage-grotesque-latin-ext-800-normal.woff2); font-weight: 800; unicode-range: U+0100-024F; }
+@font-face { font-family: "Bricolage"; src: url(../assets/fonts/bricolage-grotesque-latin-ext-700-normal.woff2); font-weight: 700; unicode-range: U+0100-024F; }
+@page { size: A4; margin: 0; }
+:root { --ink: #1c2117; --soft: #4a5242; --moss: #4d6a2e; --line: #d9dccf; --tint: #f1f2ea; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { font: 8.9pt/1.36 "Inter", sans-serif; color: var(--ink); background: #fff; }
+.page { width: 210mm; height: 297mm; padding: 11mm 13mm 9mm; display: grid; grid-template-rows: auto 1fr; overflow: hidden; }
+header { display: grid; grid-template-columns: 1fr auto; gap: 6mm; align-items: end; padding-bottom: 4mm; border-bottom: 2.2pt solid var(--moss); }
+h1 { font: 800 27pt/1 "Bricolage", sans-serif; letter-spacing: -.035em; margin: 0; }
+.role { font: 700 11.5pt/1.2 "Bricolage", sans-serif; color: var(--moss); margin: 2.2mm 0 0; }
+.contact { text-align: right; font-size: 8.6pt; line-height: 1.55; color: var(--soft); }
+.contact a { color: var(--ink); text-decoration: none; font-weight: 600; }
+.cols { display: grid; grid-template-columns: 1fr 56mm; gap: 8mm; padding-top: 4.5mm; }
+h2 { font: 800 9.2pt/1 "Bricolage", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--moss); margin: 0 0 2.6mm; }
+section + section { margin-top: 3.8mm; }
+p { margin: 0; }
+.profile { font-size: 9.2pt; line-height: 1.45; }
+.item + .item { margin-top: 2.3mm; }
+.head { display: flex; justify-content: space-between; gap: 4mm; align-items: baseline; }
+.head b { font-size: 10pt; font-weight: 700; }
+.head span { font-size: 8.4pt; color: var(--soft); white-space: nowrap; }
+.sub { font-size: 8.6pt; color: var(--soft); margin-top: .4mm; }
+ul { margin: .8mm 0 0; padding-left: 3.6mm; }
+li { margin: .2mm 0; }
+li::marker { color: var(--moss); }
+aside { background: var(--tint); border-radius: 3mm; padding: 5mm 4.6mm; align-self: start; }
+.skill + .skill { margin-top: 2.6mm; }
+.skill b { display: block; font-size: 8.8pt; margin-bottom: .6mm; }
+.skill p { font-size: 8.5pt; color: var(--soft); line-height: 1.45; }
+.edu + .edu { margin-top: 2.4mm; }
+.edu b { display: block; font-size: 8.8pt; }
+.edu p { font-size: 8.4pt; color: var(--soft); }
+.links p { font-size: 8.4pt; margin-bottom: 1mm; }
+.links a { color: var(--ink); text-decoration: none; font-weight: 600; white-space: nowrap; }
+</style></head>
+<body><div class="page">
+<header>
+  <div><h1>Michael Kagwima</h1><p class="role">Game Designer &amp; 3D Artist</p></div>
+  <div class="contact">+48 532 264 287<br><a href="mailto:mikekahuhu@gmail.com">mikekahuhu@gmail.com</a><br>Rzeszów, Poland<br><a href="https://magwima.github.io">magwima.github.io</a></div>
+</header>
+<div class="cols">
+<main>
+  <section>
+    <h2>Profile</h2>
+    <p class="profile">Game designer and 3D artist who takes games from first sketch to playable build: game and level design, Unity and C#, Blender models and hand-painted art. I've built a solo Unity game, painted assets for a team project and am now making my kart racer, Scrap Racers. I also teach English and have worked in sales and partner engagement, so I explain ideas clearly, work well in teams and deliver on deadlines.</p>
+  </section>
+
+  <section>
+    <h2>Selected projects</h2>
+    <div class="item"><div class="head"><b>Koi Quest: Reef Adventure</b><span>Solo · Unity, C#</span></div>
+      <ul><li>Designed and built a 3D underwater action game alone: controls, camera, levels, UI, main and pause menus.</li>
+      <li>Cut the original platform jumping and rebuilt the game around steering and dodging. Published on Unity Play.</li></ul></div>
+    <div class="item"><div class="head"><b>Scrap Racers</b><span>In production · Unity</span></div>
+      <ul><li>Designed three driver characters and modelled their trucks in Blender, textured in Heavy Paint.</li>
+      <li>Built a browser prototype, Vacuum Racer, to test the driving, collecting and bumping loop before the full build.</li></ul></div>
+    <div class="item"><div class="head"><b>The Kingdom of Eldonia</b><span>Team · 2D pixel art</span></div>
+      <ul><li>Created game assets in Heavy Paint for a team-made Windows demo.</li></ul></div>
+    <div class="item"><div class="head"><b>Jazda! Polish Streets</b><span>Browser · Three.js</span></div>
+      <ul><li>Concept, game design, levels and art direction for a 3D street-skating game that runs in the browser.</li></ul></div>
+    <div class="item"><div class="head"><b>3D portfolio</b><span>Blender</span></div>
+      <ul><li>Stylised and hard-surface vehicles, characters and props, with textured, clay and X-ray turntable renders.</li></ul></div>
+    <div class="item"><div class="head"><b>Paint the Lesson</b><span>Web app · JavaScript, Supabase</span></div>
+      <ul><li>Built a full web app for English teachers: lesson builder, courses, quizzes, homework and certificates.</li></ul></div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="item"><div class="head"><b>English Instructor</b><span>Current</span></div>
+      <p class="sub">English Break · Rzeszów, Poland</p>
+      <ul><li>Plan and teach lessons that build students' reading, writing and speaking.</li>
+      <li>Create teaching materials, notes, quizzes and practice exercises.</li>
+      <li>Track and report on each student's progress.</li></ul></div>
+    <div class="item"><div class="head"><b>English Instructor</b><span></span></div>
+      <p class="sub">Allright Pro · Online</p>
+      <ul><li>Taught online group classes for adult learners.</li>
+      <li>Adapted materials to each group's level and needs; assessed progress through tests and tasks.</li>
+      <li>Worked to the school's curriculum and took part in trainings, workshops and team meetings.</li></ul></div>
+    <div class="item"><div class="head"><b>Assistant Producer</b><span></span></div>
+      <p class="sub">Trash Arts · Portsmouth, UK</p>
+      <ul><li>Produced the short indie film <i>Decline</i>, securing its funding from several sources.</li>
+      <li>Background actor on the indie series <i>Right Here Right Now</i> and contributor to its creative discussions.</li></ul></div>
+  </section>
+</main>
+
+<aside>
+  <section>
+    <h2>Skills</h2>
+    <div class="skill"><b>Game development</b><p>Unity, C#, Visual Studio Code, game and level design, prototyping, playtesting</p></div>
+    <div class="skill"><b>3D</b><p>Blender, hard-surface and stylised modelling, hand-painted textures, rendering</p></div>
+    <div class="skill"><b>2D art</b><p>Heavy Paint, Adobe Photoshop and Adobe Suite, concept art, character painting, 2D animation</p></div>
+    <div class="skill"><b>Web</b><p>HTML, CSS, JavaScript, Three.js, Supabase</p></div>
+    <div class="skill"><b>People</b><p>Teaching and presenting, lesson design, sales and partner engagement, teamwork</p></div>
+  </section>
+  <section>
+    <h2>Education</h2>
+    <div class="edu"><b>Game Design and Management</b><p>University of Information Technology and Management · Rzeszów, Poland</p></div>
+    <div class="edu"><b>Computer Animation</b><p>International College Portsmouth · Portsmouth, UK</p></div>
+  </section>
+  <section>
+    <h2>Languages</h2>
+    <div class="edu"><b>English</b><p>Fluent</p></div>
+    <div class="edu"><b>Polish</b><p>Basic</p></div>
+  </section>
+  <section class="links">
+    <h2>Links</h2>
+    <p><a href="https://magwima.github.io">magwima.github.io</a></p>
+    <p><a href="https://mxyzptlk.artstation.com/">mxyzptlk.artstation.com</a></p>
+    <p><a href="https://www.linkedin.com/in/michael-kagwima-172569144">LinkedIn: Michael Kagwima</a></p>
+    <p><a href="https://github.com/magwima">github.com/magwima</a></p>
+  </section>
+</aside>
+</div>
+</div></body></html>

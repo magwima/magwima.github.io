@@ -356,3 +356,6 @@ dialog::backdrop { background: rgba(8,12,8,.82); backdrop-filter: blur(6px); }
   .about-wide .about-cols, .hl { grid-template-columns: 1fr; }
 }
 @media (max-width: 460px) { .disc, .about-facts { grid-template-columns: 1fr; } }
+.about-cv { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin: 28px 0 0; }
+.about-cv > span { color: var(--fog); font-size: 14px; }
+.socials-text > span { display: contents; }
