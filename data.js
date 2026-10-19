@@ -80,8 +80,6 @@ window.PORTFOLIO = {
     { title: "Dave's truck", note: "Scrap Racers", src: "assets/models/dave-truck.glb", tools: "Modelled in Blender", orbit: "-140deg 76deg 110%" },
     { title: "Rosie's truck", note: "Scrap Racers", src: "assets/models/rosie-truck.glb", tools: "Modelled in Blender", orbit: "-140deg 76deg 110%" },
     { title: "Green plane", note: "Vehicle", src: "assets/models/green-plane.glb", tools: "Modelled in Blender", orbit: "35deg 70deg 95%" },
-    { title: "Jet", note: "Vehicle", src: "assets/models/jet.glb", tools: "Modelled in Blender", orbit: "-140deg 72deg 100%" },
-    { title: "Character", note: "Character", src: "assets/models/character.glb", tools: "Modelled in Blender", orbit: "20deg 80deg 100%" },
     { title: "Bike", note: "Vehicle", src: "assets/models/bike.glb", tools: "Modelled in Blender", orbit: "35deg 75deg 100%" },
     { title: "Statue", note: "Sculpt", src: "assets/models/statue.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 100%" },
     { title: "Rocking chair", note: "Furniture", src: "assets/models/rocking-chair.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 100%" },
@@ -114,7 +112,7 @@ window.PORTFOLIO = {
   about: {
     photo: "",                                       // ← e.g. "assets/me.jpg" (square)
     paragraphs: [
-      "I'm studying game design and development at UITM Rzeszów, where I built Koi Quest for my thesis. Before that, and alongside it, I teach English and design my own lessons.",
+      "I studied game design and development at UITM Rzeszów, where I built Koi Quest for my thesis. I also teach English and design my own lessons.",
       "I like games you understand in five seconds and keep playing for an hour. I sketch characters, model them in Blender, and use AI as a fast pair of hands when an idea needs to be playable today."
     ],
     education: [
