@@ -100,8 +100,10 @@ window.PORTFOLIO = {
   turntables: [
     { title: "Tugboat", note: "Stylised vehicle, hand-painted textures", big: true, views: [{ label: "Textured", src: "assets/turntables/tugboat-final.mp4" }, { label: "Clay", src: "assets/turntables/tugboat-clay.mp4" }] },
     { title: "Gunship", note: "Hard-surface vehicle", views: [{ label: "Textured", src: "assets/turntables/gunship-final.mp4" }, { label: "Clay", src: "assets/turntables/gunship-clay.mp4" }] },
+    { title: "Hover racer", note: "Vehicle concept", views: [{ label: "Textured", src: "assets/turntables/hover-final.mp4" }, { label: "Clay", src: "assets/turntables/hover-clay.mp4" }] },
     { title: "Fairy", note: "Stylised character", views: [{ label: "Textured", src: "assets/turntables/fairy-final.mp4" }, { label: "Clay", src: "assets/turntables/fairy-clay.mp4" }] },
     { title: "Crawler", note: "Tracked vehicle", views: [{ label: "Textured", src: "assets/turntables/crawler-final.mp4" }, { label: "Clay", src: "assets/turntables/crawler-clay.mp4" }, { label: "X-ray", src: "assets/turntables/crawler-xray.mp4" }] },
+    { title: "Jet kart", note: "Vehicle concept", views: [{ label: "Textured", src: "assets/turntables/kart-final.mp4" }, { label: "Clay", src: "assets/turntables/kart-clay.mp4" }] },
     { title: "Bike", note: "Hard-surface", views: [{ label: "Textured", src: "assets/turntables/bike-final.mp4" }, { label: "Clay", src: "assets/turntables/bike-clay.mp4" }] }
   ],
 
@@ -130,16 +132,17 @@ window.PORTFOLIO = {
     { src: "assets/sketches/truck-sketch-to-3d.jpg", video: "assets/sketches/truck-sketch-to-3d.mp4", title: "Truck", note: "From sketch to 3D model" },
     { src: "assets/sketches/street-painting.jpg", video: "assets/sketches/street-painting.mp4", title: "Street scene", note: "Painting process" },
     { src: "assets/sketches/dilemma.jpg", video: "assets/sketches/dilemma.mp4", title: "Dilemma", note: "2D animation, painted backgrounds" },
-    { src: "assets/sketches/dunk.jpg", title: "Dunk", note: "Digital painting" },
+    { src: "assets/sketches/ocean.jpg", video: "assets/sketches/ocean.mp4", title: "Open sea", note: "3D environment, sunset" },
+    { src: "assets/sketches/tide.jpg", video: "assets/sketches/tide.mp4", title: "Tide", note: "2D animation loop" },
+    { src: "assets/sketches/climb.jpg", video: "assets/sketches/climb.mp4", title: "Ladder climb", note: "Character animation" },
     { src: "assets/sketches/dunk-sketch.jpg", video: "assets/sketches/dunk-sketch.mp4", title: "Dunk", note: "First motion sketch" },
+    { src: "assets/sketches/dunk.jpg", title: "Dunk", note: "Digital painting" },
     { src: "assets/sketches/fox-mask.jpg", title: "Fox mask", note: "Digital painting" },
     { src: "assets/sketches/portrait-back.jpg", title: "Portrait", note: "Flat colour" },
     { src: "assets/sketches/gentleman.jpg", title: "The gentleman", note: "Portrait" },
     { src: "assets/sketches/portrait-face.jpg", title: "Portrait", note: "Flat colour" },
     { src: "assets/sketches/one-on-one.jpg", title: "One on one", note: "Character illustration" },
-    { src: "assets/sketches/truck-values.jpg", title: "Field truck", note: "Value study" },
-    { src: "assets/sketches/truck-colour.jpg", title: "Field truck", note: "Colour study and palette" },
-    { src: "assets/sketches/street-singer.jpg", title: "Street singer", note: "Character illustration" }
+    { src: "assets/sketches/truck-colour.jpg", title: "Field truck", note: "Colour study and palette" }
   ],
 
   /* Tools and other things I've built */
