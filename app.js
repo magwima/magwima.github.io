@@ -11,6 +11,8 @@
     artstation: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 17.3l2 3.4c.4.8 1.2 1.3 2.1 1.3h13.2L16.6 17.3zM22 17.4c0-.5-.1-.9-.4-1.3L13.9 2.7A2.4 2.4 0 0 0 11.8 1.5H7.6l12.2 21.1 1.9-3.3c.4-.6.3-.8.3-1.9zM12.9 14.5L8.5 6.9l-4.4 7.6z"/></svg>',
     github: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>',
     itch: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.1 2.4C2.2 3 .3 5.1.3 5.7v1c0 1.3 1.2 2.4 2.3 2.4 1.3 0 2.4-1.1 2.4-2.4 0 1.3 1 2.4 2.3 2.4s2.3-1.1 2.3-2.4c0 1.3 1.1 2.4 2.4 2.4h.1c1.3 0 2.4-1.1 2.4-2.4 0 1.3 1 2.4 2.3 2.4s2.3-1.1 2.3-2.4c0 1.3 1.1 2.4 2.4 2.4 1.1 0 2.3-1.1 2.3-2.4v-1c0-.6-1.9-2.7-2.8-3.3C17.5 2.2 6.5 2.2 3.1 2.4zm6.6 7a2.7 2.7 0 0 1-4.6 0 2.7 2.7 0 0 1-2.3 1.3c-.4 0-.7-.1-1-.2-.3 3.2-.3 6.4 0 9.6 0 .8.6 1.5 1.6 1.8 3.1.8 14.1.8 17.2 0 1-.3 1.6-1 1.6-1.8.3-3.2.3-6.4 0-9.6-.3.1-.6.2-1 .2a2.7 2.7 0 0 1-2.3-1.3 2.7 2.7 0 0 1-4.6 0 2.7 2.7 0 0 1-2.3 1.3 2.7 2.7 0 0 1-2.3-1.3zM8 13h.1c.9 0 1.7 0 2.7 1.1.8-.1 1.6-.1 2.4 0C14.1 13 15 13 15.9 13c.4 0 2.2 0 3.4 3.5l1.4 4.9c.9 3.4-.3 3.5-1.9 3.5-2.3-.1-3.6-1.8-3.6-3.5-1.2.2-2.4.3-3.3.3s-2.1-.1-3.3-.3c0 1.7-1.3 3.4-3.6 3.5-1.6 0-2.8-.1-1.9-3.5l1.4-4.9C5.8 13 7.6 13 8 13zm4 2.6s-2.4 2.2-2.8 3l1.6-.1v1.4h2.4v-1.4l1.6.1c-.4-.8-2.8-3-2.8-3z"/></svg>',
+    linkedin: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.6 4.77 6v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4z"/></svg>',
+    personal: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 20l1.2-4.8L15.6 4.8a2 2 0 0 1 2.8 0l.8.8a2 2 0 0 1 0 2.8L8.8 18.8zM14 6.4l3.6 3.6"/></svg>',
     mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>',
     play: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>',
     out: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>',
@@ -18,8 +20,8 @@
     solo: '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg>',
     collab: '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="8" cy="8" r="3.4"/><circle cx="16.5" cy="9" r="2.8"/><path d="M1.5 20c0-3.8 2.9-6.2 6.5-6.2s6.5 2.4 6.5 6.2zM15.5 20c0-2.2-.6-3.9-1.8-5.2.9-.4 1.8-.6 2.8-.6 3 0 5.5 2 5.5 5.8z"/></svg>'
   };
-  const KIND = { ai: "Made with AI", solo: "Solo", collab: "Team" };
-  const socialName = { instagram: "Instagram", facebook: "Facebook", artstation: "ArtStation", github: "GitHub", itch: "itch.io" };
+  const KIND = { solo: "Solo", collab: "Team", personal: "Personal project" };
+  const socialName = { instagram: "Instagram", facebook: "Facebook", artstation: "ArtStation", github: "GitHub", itch: "itch.io", linkedin: "LinkedIn" };
 
   /* ---------- drawn covers for games without screenshots yet ---------- */
   const ART = {
@@ -71,7 +73,7 @@
     g.play ? `<button class="btn btn-small btn-solid" type="button" data-play="${g.id}">${I.play}Play</button>` : "",
     link(g.unity, "Play on Unity", "btn btn-small btn-solid", I.out),
     link(g.itch, g.play || g.unity ? "itch.io" : "Get it on itch.io", g.play || g.unity ? "btn btn-small" : "btn btn-small btn-solid", I.out),
-    `<button class="btn btn-small" type="button" data-details="${g.id}">About this game</button>`
+    `<button class="btn btn-small" type="button" data-details="${g.id}">${g.story ? "How I made it" : "About this game"}</button>`
   ].join("");
   const grid = $("[data-grid]");
   grid.innerHTML = D.games.map(g => `
@@ -97,7 +99,7 @@
   });
 
   // filters
-  const groups = [["all", "All", () => true], ["ai", "Made with AI", g => g.kind === "ai"], ["solo", "Solo", g => g.kind === "solo"], ["collab", "Team projects", g => g.kind === "collab"],
+  const groups = [["all", "All", () => true], ["solo", "Solo", g => g.kind === "solo"], ["collab", "Team projects", g => g.kind === "collab"], ["personal", "Personal projects", g => g.kind === "personal"],
     ["unity", "Unity", g => /unity/i.test(g.engine)], ["browser", "Play in browser", g => !!(g.play || g.unity)]].filter(([k, , f]) => k === "all" || D.games.some(f));
   const fbar = $("[data-filters]");
   fbar.innerHTML = groups.map(([k, label, f], i) => `<button type="button" role="tab" aria-selected="${i === 0}" data-f="${k}">${label}<span>${D.games.filter(f).length}</span></button>`).join("");
@@ -138,6 +140,14 @@
           <dt>Made with</dt><dd>${esc((g.tools || []).join(", "))}</dd>
           ${g.year ? `<dt>Year</dt><dd>${esc(g.year)}</dd>` : ""}
         </dl>
+        ${g.story ? `<section class="story">
+          <h3>How I made it</h3>
+          ${g.story.goal ? `<p class="story-goal">${esc(g.story.goal)}</p>` : ""}
+          ${(g.story.steps || []).length ? `<ol class="story-steps">${g.story.steps.map(st => `<li>${st.title ? `<b>${esc(st.title)}</b>` : ""}${esc(st.text || st)}</li>`).join("")}</ol>` : ""}
+          ${(g.story.images || []).length ? `<div class="story-shots">${g.story.images.map(im => `<figure><img src="${esc(im.src || im)}" alt="${esc(im.caption || "")}" loading="lazy">${im.caption ? `<figcaption>${esc(im.caption)}</figcaption>` : ""}</figure>`).join("")}</div>` : ""}
+          ${g.story.learned ? `<h4>What I learned</h4><p>${esc(g.story.learned)}</p>` : ""}
+          ${g.story.next ? `<h4>Next</h4><p>${esc(g.story.next)}</p>` : ""}
+        </section>` : ""}
         <div class="card-actions">${[g.play ? `<button class="btn btn-solid" type="button" data-play="${g.id}">${I.play}Play</button>` : "", link(g.unity, "Play on Unity", "btn btn-solid", I.out), link(g.itch, "Get it on itch.io", g.play || g.unity ? "btn" : "btn btn-solid", I.out), link(g.page, "Project page", "btn", I.out), link(g.repo, "Source on GitHub", "btn", I.out)].join("")}</div>
       </div>`;
     details.showModal();

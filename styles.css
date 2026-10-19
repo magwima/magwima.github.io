@@ -127,7 +127,7 @@ main > section > *, .foot > * { max-width: var(--wide); margin-left: auto; margi
 .shots-dots i.on { background: var(--bone); width: 16px; border-radius: 3px; }
 .kind { position: absolute; top: 12px; left: 12px; display: inline-flex; align-items: center; gap: 6px; padding: 6px 11px; border-radius: 999px; font-size: 13px; font-weight: 700; background: rgba(18,26,17,.78); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: var(--bone); }
 .kind svg { width: 14px; height: 14px; }
-.kind.ai svg { color: var(--lichen); } .kind.solo svg { color: var(--spore); } .kind.collab svg { color: #9fd0d8; }
+.kind.personal svg { color: var(--lichen); } .kind.solo svg { color: var(--spore); } .kind.collab svg { color: #9fd0d8; }
 .card-body { display: flex; flex-direction: column; gap: 10px; padding: 18px 20px 20px; flex: 1; }
 .card-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
 .card h3 { font-size: 24px; font-weight: 800; line-height: 1.1; }
@@ -250,3 +250,17 @@ dialog::backdrop { background: rgba(8,12,8,.82); backdrop-filter: blur(6px); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* "How I made it" in the game details */
+.story { border-top: 1px solid var(--bark); margin-top: 6px; padding-top: 22px; }
+.story h3 { font-size: 24px; font-weight: 800; margin: 0 0 10px; }
+.story h4 { font: 700 16px var(--display); color: var(--lichen); margin: 22px 0 6px; }
+.story p { font-family: var(--read); line-height: 1.65; color: #d5d6c8; margin: 0; }
+.story .story-goal { font-size: 18px; color: var(--bone); }
+.story-steps { counter-reset: st; list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 14px; }
+.story-steps li { counter-increment: st; position: relative; padding-left: 44px; font-family: var(--read); line-height: 1.6; color: #d5d6c8; }
+.story-steps li::before { content: counter(st); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--moss); color: var(--bone); font: 700 14px var(--display); }
+.story-steps b { display: block; color: var(--bone); font-family: var(--display); margin-bottom: 2px; }
+.story-shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 18px; }
+.story-shots img { width: 100%; border-radius: 12px; display: block; }
+.story-shots figcaption { font-size: 13px; color: var(--fog); margin-top: 6px; }

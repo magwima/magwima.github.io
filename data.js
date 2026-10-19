@@ -9,11 +9,12 @@ window.PORTFOLIO = {
   handle: "Dasz",
   role: "Game designer & developer",
   place: "Rzeszów, Poland",
-  intro: "I make games for the browser and for Unity, model in Blender, and build learning tools for my English students. Some projects are mine from the first sketch to the last line, some are made with friends, and some I direct while AI writes the code.",
+  intro: "I make games for the browser and for Unity, model in Blender, and build learning tools for my English students. Some projects are mine from the first sketch to the last line, some are made with friends, and some are personal projects where I direct the whole build.",
   email: "mikekahuhu@gmail.com",
   socials: {                                        // add instagram, facebook or itch the same way; empty ones are hidden
     artstation: "https://mxyzptlk.artstation.com/",
-    github: "https://github.com/magwima"
+    github: "https://github.com/magwima",
+    linkedin: "https://www.linkedin.com/in/michael-kagwima-172569144"
   },
 
   /* The poster at the top of the page. Replace image with your own poster (portrait, about 1200 × 1600). */
@@ -30,34 +31,29 @@ window.PORTFOLIO = {
     prototype: "vacuum"                                // id of a playable prototype in `games`, or ""
   },
 
-  /* kind: "solo" | "ai" | "collab"     engine: "Browser" | "Unity" | ...
+  /* kind: "solo" | "collab" | "personal"     engine: "Browser" | "Unity" | ...
      play: opens inside the page (browser games, itch.io embeds)
      unity: a play.unity.com link (opens in a new tab)
      itch / repo / page: extra links */
   games: [
     {
-      id: "jazda", title: "Jazda! Polish Streets", year: 2026, kind: "ai", engine: "Browser · 3D",
-      featured: true,
-      summary: "A street-skating racer through Warsaw, Rzeszów, Gdańsk and Wrocław. Grind rails, flip over barriers, dodge trams and race three rivals.",
-      role: "Game design and art direction. Code, art and music written by Claude from my direction.",
-      tools: ["Claude", "Three.js", "HTML5", "Web Audio"],
-      images: ["assets/covers/jazda-2.jpg", "assets/covers/jazda-1.jpg", "assets/covers/jazda-3.jpg", "assets/covers/jazda-4.jpg"],
-      play: "https://magwima.github.io/Jazda/", repo: "https://github.com/magwima/Jazda"
-    },
-    {
-      id: "vacuum", title: "Vacuum Racer", year: 2026, kind: "ai", engine: "Browser · 3D",
-      summary: "The browser prototype of Scrap Racers. Pick Dave, Rosie or Dasz and race vacuum trucks across Dusty Dunes, Canyon Twist and Scrapyard Night. Installs on your phone and plays offline.",
-      role: "Game design, characters and levels. Built with Claude as the browser prototype of the Unity game.",
-      tools: ["Claude", "Three.js", "PWA"],
-      images: ["assets/covers/vacuum-1.jpg", "assets/covers/vacuum-2.jpg"],
-      play: "https://magwima.github.io/Vaccum-Racer/", repo: "https://github.com/magwima/Vaccum-Racer"
-    },
-    {
       id: "koi", title: "Koi Quest: Reef Adventure", year: 2026, kind: "solo", engine: "Unity · 3D",
+      featured: true,
       summary: "A third-person underwater adventure. Steer a koi through the reef, dash past jellyfish and sharks, and fight back with bubble shots.",
       role: "Everything: design, Unity programming in C#, level building and UI.",
       tools: ["Unity", "C#", "Blender"],
       images: ["assets/covers/koi-1.jpg", "assets/covers/koi-2.jpg"],   // full poster: assets/koi-poster.jpg
+      story: {
+        goal: "My final project in game design: a 3D game in Unity that anyone understands in seconds. You are a koi, and the reef is trying to stop you.",
+        steps: [
+          { title: "Look and feel first", text: "Mood boards for the reef, the koi and the enemies, so every level shared one colour world before I built anything." },
+          { title: "Cutting what didn't fit", text: "The first design mixed swimming with platform-style jumping. I removed the jumping completely and rebuilt the game around steering and dodging, which is what swimming should feel like." },
+          { title: "Controls you learn in seconds", text: "The koi always swims forward. W A S D or the arrow keys steer up, down, left and right, a long press dashes in that direction, and Space fires a bubble shot." },
+          { title: "A camera that shows the danger", text: "A third-person camera keeps the whole fish in view, so you can always see what you're about to dodge." },
+          { title: "Ready for players", text: "Several levels, a main menu that shows the controls up front, and a pause menu. In the web build Esc already does things in the browser, so pause sits on P only." }
+        ],
+        learned: "Removing a mechanic can make a game stronger, and testing in the real web build early catches problems the Unity editor hides."
+      },
       unity: "https://play.unity.com/en/games/9616cf4a-6756-4f5a-a918-d318ec580c23/koi-quest-reef-adventure",
       repo: "https://github.com/magwima/Koi-Quest--A-3D-Action-Adventure-Game"
     },
@@ -69,6 +65,32 @@ window.PORTFOLIO = {
       team: "Indo-Bulgarian League: Shaay, IvanSI139, Vorqen and me (Kahuhu)",
       images: ["assets/covers/eldonia-1.jpg"],
       itch: "https://shaaylmao.itch.io/the-kingdom-of-eldonia"   // Windows download, so it opens on itch.io
+    },
+    {
+      id: "jazda", title: "Jazda! Polish Streets", year: 2026, kind: "personal", engine: "Browser · 3D",
+      summary: "A street-skating racer through Warsaw, Rzeszów, Gdańsk and Wrocław. Grind rails, flip over barriers, dodge trams and race three rivals.",
+      role: "Concept, game design, levels and art direction. I directed the build and used Claude as my coding partner.",
+      tools: ["Claude", "Three.js", "HTML5", "Web Audio"],
+      images: ["assets/covers/jazda-2.jpg", "assets/covers/jazda-1.jpg", "assets/covers/jazda-3.jpg", "assets/covers/jazda-4.jpg"],
+      play: "https://magwima.github.io/Jazda/", repo: "https://github.com/magwima/Jazda"
+    },
+    {
+      id: "vacuum", title: "Vacuum Racer", year: 2026, kind: "personal", engine: "Browser · 3D",
+      summary: "The browser prototype of Scrap Racers. Pick Dave, Rosie or Dasz and race vacuum trucks across Dusty Dunes, Canyon Twist and Scrapyard Night. Installs on your phone and plays offline.",
+      role: "Game design, characters and levels, and the truck models in Blender. I directed the build of this browser prototype with Claude as my coding partner.",
+      tools: ["Claude", "Three.js", "PWA"],
+      images: ["assets/covers/vacuum-1.jpg", "assets/covers/vacuum-2.jpg"],
+      story: {
+        goal: "Scrap Racers is a kart-style combat racer: vacuum trucks suck up scrap on the track and ram their rivals to make them spill it. Vacuum Racer is where I test the idea.",
+        steps: [
+          { title: "Characters first", text: "Three drivers with their own personalities, Dave, Rosie and Dasz. I modelled each truck in Blender and textured them in Heavy Paint." },
+          { title: "Start small", text: "One truck (Dave) and one track, so the core loop of driving, collecting and bumping could be tested before adding more." },
+          { title: "A camera that reads the track", text: "A chase camera behind the truck, inspired by Subway Surfers, so the next checkpoint and the scrap ahead are always clear." },
+          { title: "Prototype in the browser", text: "A quick browser version to try the feel of racing, collecting and AI rivals before building the full game in Unity." }
+        ],
+        next: "The Unity version: AI rivals, Rosie and Dasz on track, and more circuits."
+      },
+      play: "https://magwima.github.io/Vaccum-Racer/", repo: "https://github.com/magwima/Vaccum-Racer"
     }  ],
 
   /* Showreel at the top of the 3D section. Any YouTube link works; leave youtube "" to hide it. */
