@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Michael Kahuhu · Games</title>
+<meta name="description" content="Games, 3D models and learning tools by Michael Kahuhu (Dasz), game designer and developer in Rzeszów.">
+<meta name="theme-color" content="#121a11">
+<meta property="og:title" content="Michael Kahuhu · Games">
+<meta property="og:description" content="Games for the browser and Unity, Blender models and learning tools.">
+<meta property="og:image" content="assets/covers/jazda-2.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+</head>
+<body>
+<svg class="grain" aria-hidden="true"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .6  0 0 0 0 .7  0 0 0 0 .5  0 0 0 .55 0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg>
+
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Back to top"><span class="mark" aria-hidden="true"></span><span class="brand-name"></span></a>
+  <nav aria-label="Sections">
+    <a href="#games">Games</a><a href="#models">3D</a><a href="#tools">Tools</a><a href="#about">About</a>
+  </nav>
+  <div class="socials" data-socials></div>
+</header>
+
+<main id="top">
+  <!-- Coming soon: the poster -->
+  <section class="soon" aria-labelledby="soon-title">
+    <figure class="poster">
+      <img alt="" data-soon-img>
+      <div class="poster-wash"></div>
+      <span class="poster-title" aria-hidden="true" data-soon-title></span>
+      <span class="poster-seal" data-soon-status></span>
+    </figure>
+    <div class="soon-copy">
+      <p class="soon-kicker"><span class="pulse" aria-hidden="true"></span>Coming soon</p>
+      <h1 id="soon-title" data-soon-title></h1>
+      <p class="soon-edition" data-soon-edition></p>
+      <p class="soon-teaser" data-soon-teaser></p>
+      <div class="progress" role="img" data-soon-progress></div>
+      <ol class="milestones" data-soon-milestones></ol>
+      <div class="soon-actions" data-soon-actions></div>
+    </div>
+  </section>
+
+  <!-- Who -->
+  <section class="intro" aria-label="Introduction">
+    <h2 class="intro-name"><span data-name></span><small data-role></small></h2>
+    <div class="intro-text">
+      <p data-intro></p>
+      <p class="intro-links"><a class="btn btn-solid" href="#games">See the games</a><a class="btn" data-email>Email me</a></p>
+    </div>
+  </section>
+
+  <!-- Games -->
+  <section class="games" id="games" aria-labelledby="games-title">
+    <div class="section-head">
+      <h2 id="games-title">Games</h2>
+      <div class="filters" role="tablist" aria-label="Filter games" data-filters></div>
+    </div>
+    <div class="grid" data-grid></div>
+  </section>
+
+  <!-- 3D -->
+  <section class="models" id="models" aria-labelledby="models-title">
+    <div class="section-head">
+      <h2 id="models-title">3D work</h2>
+      <p class="section-note">Drag to turn a model, scroll or pinch to zoom.</p>
+    </div>
+    <div class="rail" data-models tabindex="0" aria-label="3D models, scroll sideways"></div>
+  </section>
+
+  <!-- Tools -->
+  <section class="tools" id="tools" aria-labelledby="tools-title">
+    <div class="section-head">
+      <h2 id="tools-title">Tools I built</h2>
+      <p class="section-note">Apps I made for teaching and learning languages.</p>
+    </div>
+    <div data-tools></div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="about-photo" data-photo></div>
+    <div class="about-body">
+      <h2 id="about-title">About me</h2>
+      <div class="about-text" data-about></div>
+      <div class="about-cols">
+        <div><h3>Education</h3><ul class="edu" data-edu></ul></div>
+        <div><h3>Passions</h3><ul class="tags" data-passions></ul></div>
+        <div><h3>Skills</h3><ul class="tags" data-skills></ul></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-mail-wrap"><p class="foot-lead">Want to make something together?</p><a class="foot-mail" data-email></a></div>
+  <div class="foot-row"><div class="socials socials-text" data-socials-text></div><p class="foot-small">© <span data-year></span> <span data-name></span></p></div>
+</footer>
+
+<!-- Play a game inside the page -->
+<dialog class="player" aria-labelledby="player-title">
+  <div class="player-bar">
+    <h2 id="player-title"></h2>
+    <a class="btn btn-small" target="_blank" rel="noopener" data-player-open>Open in a new tab</a>
+    <button class="btn btn-small" type="button" data-player-close>Close</button>
+  </div>
+  <iframe title="Game" allow="fullscreen; autoplay; gamepad; accelerometer; gyroscope" allowfullscreen></iframe>
+</dialog>
+
+<!-- Project details -->
+<dialog class="details" aria-labelledby="details-title"><div class="details-inner" data-details></div></dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
