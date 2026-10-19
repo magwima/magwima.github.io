@@ -127,19 +127,19 @@ window.PORTFOLIO = {
   /* Sketchbook: concept art, sketches, mood boards, wireframes. Put images in assets/sketches/ (any shape). */
   // video: an .mp4 that loops silently (src is its still image)
   sketchbook: [
+    { src: "assets/sketches/truck-sketch-to-3d.jpg", video: "assets/sketches/truck-sketch-to-3d.mp4", title: "Truck", note: "From sketch to 3D model" },
+    { src: "assets/sketches/street-painting.jpg", video: "assets/sketches/street-painting.mp4", title: "Street scene", note: "Painting process" },
+    { src: "assets/sketches/dilemma.jpg", video: "assets/sketches/dilemma.mp4", title: "Dilemma", note: "2D animation, painted backgrounds" },
     { src: "assets/sketches/dunk.jpg", title: "Dunk", note: "Digital painting" },
     { src: "assets/sketches/dunk-sketch.jpg", video: "assets/sketches/dunk-sketch.mp4", title: "Dunk", note: "First motion sketch" },
     { src: "assets/sketches/fox-mask.jpg", title: "Fox mask", note: "Digital painting" },
-    { src: "assets/sketches/truck-sketch-to-3d.jpg", video: "assets/sketches/truck-sketch-to-3d.mp4", title: "Truck", note: "From sketch to 3D model" },
     { src: "assets/sketches/portrait-back.jpg", title: "Portrait", note: "Flat colour" },
     { src: "assets/sketches/gentleman.jpg", title: "The gentleman", note: "Portrait" },
-    { src: "assets/sketches/street-painting.jpg", video: "assets/sketches/street-painting.mp4", title: "Street scene", note: "Painting process" },
     { src: "assets/sketches/portrait-face.jpg", title: "Portrait", note: "Flat colour" },
     { src: "assets/sketches/one-on-one.jpg", title: "One on one", note: "Character illustration" },
     { src: "assets/sketches/truck-values.jpg", title: "Field truck", note: "Value study" },
     { src: "assets/sketches/truck-colour.jpg", title: "Field truck", note: "Colour study and palette" },
-    { src: "assets/sketches/street-singer.jpg", title: "Street singer", note: "Character illustration" },
-    { src: "assets/sketches/dilemma.jpg", video: "assets/sketches/dilemma.mp4", title: "Dilemma", note: "2D animation, painted backgrounds" }
+    { src: "assets/sketches/street-singer.jpg", title: "Street singer", note: "Character illustration" }
   ],
 
   /* Tools and other things I've built */

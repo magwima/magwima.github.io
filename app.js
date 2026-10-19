@@ -160,7 +160,16 @@
     $("#sketchbook").hidden = false;
     fill("[data-sketches]", SK.map((s, i) => `<figure class="sketch${s.wide ? " wide" : ""}"><button type="button" data-sketch="${i}" aria-label="View ${esc(s.title)} larger">${s.video ? loopVideo(s.video, s.src) : `<img src="${esc(s.src)}" alt="${esc(s.title)}" loading="lazy">`}</button>
       <figcaption><b>${esc(s.title)}</b>${s.note ? `<span>${esc(s.note)}</span>` : ""}</figcaption></figure>`).join(""));
-    watch($("[data-sketches]"));
+    // lay pieces out left to right, row by row, in columns that keep each image's own shape
+    const grid = $("[data-sketches]"), figs = $$(".sketch", grid);
+    let cols = 0;
+    const layout = () => {
+      const n = innerWidth < 640 ? 1 : innerWidth < 1000 ? 2 : 3; if (n === cols) return; cols = n;
+      grid.innerHTML = ""; const cs = Array.from({ length:n }, () => { const c = document.createElement("div"); c.className = "sketch-col"; grid.appendChild(c); return c; });
+      figs.forEach((f, i) => cs[i % n].appendChild(f));
+    };
+    layout(); addEventListener("resize", layout);
+    watch(grid);
     const lb = $(".lightbox"), lbImg = $("[data-lb-img]"), lbVid = $("[data-lb-vid]");
     document.addEventListener("click", e => {
       const b = e.target.closest("[data-sketch]"); if (!b) return;
