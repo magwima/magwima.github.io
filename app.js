@@ -165,8 +165,8 @@
 
   /* ---------- 3D models ---------- */
   fill("[data-models]", D.models.map(m => `
-    <figure class="model">
-      <model-viewer src="${esc(m.src)}" alt="3D model: ${esc(m.title)}" camera-controls touch-action="pan-y" auto-rotate auto-rotate-delay="0" rotation-per-second="18deg" interaction-prompt="none" shadow-intensity="1" shadow-softness=".8" exposure="1.05" environment-image="neutral" loading="lazy" disable-pan></model-viewer>
+    <figure class="model${m.big ? " model-big" : ""}">
+      <model-viewer src="${esc(m.src)}" alt="3D model: ${esc(m.title)}"${m.orbit ? ` camera-orbit="${esc(m.orbit)}"` : ""} camera-controls touch-action="pan-y" auto-rotate auto-rotate-delay="0" rotation-per-second="18deg" interaction-prompt="none" shadow-intensity="1" shadow-softness=".8" exposure="1.05" environment-image="neutral" loading="lazy" disable-pan></model-viewer>
       <figcaption class="model-cap"><b>${esc(m.title)}</b><span>${esc(m.note)}<br>${esc(m.tools)}</span></figcaption>
     </figure>`).join(""));
 

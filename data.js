@@ -76,6 +76,7 @@ window.PORTFOLIO = {
 
   /* 3D models: export from Blender as .glb (File → Export → glTF 2.0, format "glTF Binary") into assets/models/ */
   models: [
+    { title: "Dasz's truck", note: "Scrap Racers", src: "assets/models/dasz-truck.glb", tools: "Modelled in Blender", orbit: "-140deg 76deg 92%", big: true },
     { title: "Stary", note: "Skater from Jazda!", src: "assets/models/skater-stary.glb", tools: "Built in code" },
     { title: "Ola", note: "Skater from Jazda!", src: "assets/models/skater-ola.glb", tools: "Built in code" },
     { title: "Warsaw tram", note: "Jazda!", src: "assets/models/tram.glb", tools: "Built in code" },

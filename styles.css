@@ -155,9 +155,12 @@ main > section > *, .foot > * { max-width: var(--wide); margin-left: auto; margi
 
 /* ---------- 3D rail ---------- */
 .models { overflow: hidden; }
-.rail { display: grid; grid-auto-flow: column; grid-auto-columns: clamp(250px, 26vw, 340px); gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: var(--moss) transparent; }
-.model { scroll-snap-align: start; display: flex; flex-direction: column; background: radial-gradient(120% 90% at 50% 20%, #2a3923, var(--bog) 70%); border-radius: 18px; overflow: hidden; box-shadow: 0 0 0 1px rgba(184,210,111,.07); }
-.model model-viewer { width: 100%; aspect-ratio: 1 / 1.1; --poster-color: transparent; background: transparent; }
+.rail { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: var(--moss) transparent; }
+.model { flex: 0 0 clamp(250px, 24vw, 320px); margin: 0; scroll-snap-align: start; display: flex; flex-direction: column; background: radial-gradient(120% 90% at 50% 20%, #2a3923, var(--bog) 70%); border-radius: 18px; overflow: hidden; box-shadow: 0 0 0 1px rgba(184,210,111,.07); }
+.model model-viewer { display: block; width: 100%; height: clamp(300px, 28vw, 380px); flex: none; --poster-color: transparent; background: transparent; }
+.model-big { flex-basis: clamp(250px, 46vw, 660px); }
+@media (max-width: 640px) { .model, .model-big { flex-basis: 82vw; } }
+.model model-viewer::part(default-progress-bar) { background: var(--lichen); }
 .model-cap { display: flex; justify-content: space-between; gap: 10px; padding: 12px 16px 16px; border-top: 1px solid var(--bark); }
 .model-cap b { font-weight: 700; }
 .model-cap span { color: var(--fog); font-size: 14px; text-align: right; }
