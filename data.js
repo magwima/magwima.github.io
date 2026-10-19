@@ -72,21 +72,27 @@ window.PORTFOLIO = {
     }  ],
 
   /* Showreel at the top of the 3D section. Any YouTube link works; leave youtube "" to hide it. */
-  showreel: { title: "Showreel", year: 2024, note: "An older reel of my 3D work. More on ArtStation.", youtube: "https://youtu.be/_7HarJloqvs" },
+  showreel: { title: "Showreel", year: 2024, note: "A showreel of my 3D models.", youtube: "https://youtu.be/_7HarJloqvs" },
 
   /* 3D models: export from Blender as .glb (File → Export → glTF 2.0, format "glTF Binary") into assets/models/ */
   models: [
     { title: "Dasz's truck", note: "Scrap Racers", src: "assets/models/dasz-truck.glb", tools: "Modelled in Blender", orbit: "-140deg 76deg 92%", big: true },
     { title: "Dave's truck", note: "Scrap Racers", src: "assets/models/dave-truck.glb", tools: "Modelled in Blender", orbit: "-140deg 76deg 110%" },
     { title: "Rosie's truck", note: "Scrap Racers", src: "assets/models/rosie-truck.glb", tools: "Modelled in Blender", orbit: "-140deg 76deg 110%" },
-    { title: "Mars rover", note: "Vehicle study", src: "assets/models/mars-rover.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 95%" },
-    { title: "Green plane", note: "Stylised aircraft", src: "assets/models/green-plane.glb", tools: "Modelled in Blender", orbit: "35deg 70deg 95%" },
+    { title: "Green plane", note: "Vehicle", src: "assets/models/green-plane.glb", tools: "Modelled in Blender", orbit: "35deg 70deg 95%" },
+    { title: "Jet", note: "Vehicle", src: "assets/models/jet.glb", tools: "Modelled in Blender", orbit: "-140deg 72deg 100%" },
+    { title: "Character", note: "Character", src: "assets/models/character.glb", tools: "Modelled in Blender", orbit: "20deg 80deg 100%" },
+    { title: "Bike", note: "Vehicle", src: "assets/models/bike.glb", tools: "Modelled in Blender", orbit: "35deg 75deg 100%" },
+    { title: "Statue", note: "Sculpt", src: "assets/models/statue.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 100%" },
+    { title: "Rocking chair", note: "Furniture", src: "assets/models/rocking-chair.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 100%" },
+    { title: "Couch", note: "Furniture", src: "assets/models/couch.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 100%" },
     { title: "Stary", note: "Skater from Jazda!", src: "assets/models/skater-stary.glb", tools: "Built in code" },
     { title: "Ola", note: "Skater from Jazda!", src: "assets/models/skater-ola.glb", tools: "Built in code" },
     { title: "Warsaw tram", note: "Jazda!", src: "assets/models/tram.glb", tools: "Built in code" },
     { title: "Pączuś kiosk", note: "Jazda!", src: "assets/models/kiosk.glb", tools: "Built in code" },
     { title: "Linden tree", note: "Jazda!", src: "assets/models/tree.glb", tools: "Built in code" },
-    { title: "Poster column", note: "Jazda!", src: "assets/models/column.glb", tools: "Built in code" }
+    { title: "Poster column", note: "Jazda!", src: "assets/models/column.glb", tools: "Built in code" },
+    { title: "Mars rover", note: "Vehicle", src: "assets/models/mars-rover.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 95%" }
   ],
 
   /* Tools and other things I've built */
