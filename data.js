@@ -105,7 +105,7 @@ window.PORTFOLIO = {
       title: "Polski w kawałkach", tagline: "Polish in bite-size rounds",
       summary: "A Polish-learning game for English speakers, as a web page and a Chrome extension: word tiles, verb forms, listening, dialogues and A2–B1 grammar with spaced review.",
       images: ["assets/covers/polski-1.jpg", "assets/covers/polski-3.jpg"],
-      link: "https://github.com/magwima/Polski-Cafe", linkText: "See the project"
+      link: "https://chromewebstore.google.com/detail/emgbepamegcncjkmjjfbckelagmemhii", linkText: "Add to Chrome"
     }
   ],
 
