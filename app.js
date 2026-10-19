@@ -254,8 +254,10 @@
   /* ---------- about ---------- */
   const A = D.about;
   $("[data-photo]").innerHTML = A.photo ? `<img src="${esc(A.photo)}" alt="${esc(D.name)}">` : `<span class="initials" aria-hidden="true">${esc(D.name.split(" ").map(w => w[0]).join(""))}</span>`;
+  fill("[data-about-lead]", esc(A.lead));
+  fill("[data-facts]", A.facts.map(f => `<div><dt>${esc(f.k)}</dt><dd>${esc(f.v)}</dd></div>`).join(""));
   fill("[data-about]", A.paragraphs.map(p => `<p>${esc(p)}</p>`).join(""));
-  fill("[data-edu]", A.education.map(e => `<li><b>${esc(e.what)}</b><span>${esc(e.where)}${e.when ? ", " + esc(e.when) : ""}</span>${e.detail ? `<br><span>${esc(e.detail)}</span>` : ""}</li>`).join(""));
+  fill("[data-disc]", A.disciplines.map((d, i) => `<article><span class="disc-n">0${i + 1}</span><h4>${esc(d.title)}</h4><p>${esc(d.text)}</p><ul>${d.tools.map(t => `<li>${esc(t)}</li>`).join("")}</ul></article>`).join(""));
+  fill("[data-hl]", A.highlights.map(x => `<li><a href="${esc(x.href)}"><b>${esc(x.title)}</b><span>${esc(x.text)}</span></a></li>`).join(""));
   fill("[data-passions]", A.passions.map(p => `<li>${esc(p)}</li>`).join(""));
-  fill("[data-skills]", A.skills.map(p => `<li>${esc(p)}</li>`).join(""));
 })();

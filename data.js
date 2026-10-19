@@ -166,15 +166,31 @@ window.PORTFOLIO = {
 
   about: {
     photo: "assets/me.jpg",                         // square photo
+    lead: "I make small games that feel good in the hands, and I draw, model and paint the worlds they live in.",
     paragraphs: [
-      "I studied game design and development, and 3D modelling. I also teach English and design my own lessons.",
-      "I like games you understand in five seconds and keep playing for an hour. I sketch characters, model them in Blender, and use AI as a fast pair of hands when an idea needs to be playable today."
+      "I'm Michael, a game designer and 3D artist based in Rzeszów, Poland. I studied game design and development, and 3D modelling, and I've worked on both sides of the line ever since: designing how a game plays, then building what it looks like.",
+      "My rule is simple. You should understand a game in five seconds and still be playing an hour later. So I start with one feeling, like steering a koi through a reef or bumping a scrap truck into a rival, and cut everything that gets in its way.",
+      "Most of my ideas start as a sketch. From there I model them in Blender, paint them by hand and drop them into Unity or the browser to see if they're fun. When I'm not making games I teach English and build tools that make lessons easier to plan and nicer to learn from."
     ],
-    education: [
-      { what: "Game design and development", where: "", when: "", detail: "" },
-      { what: "3D modelling", where: "", when: "", detail: "" }
+    facts: [
+      { k: "Based in", v: "Rzeszów, Poland" },
+      { k: "Studied", v: "Game design and development, 3D modelling" },
+      { k: "Now", v: "Building Scrap Racers in Unity" },
+      { k: "Languages", v: "English, learning Polish" }
     ],
-    passions: ["Teaching English", "Learning Polish", "Low-poly 3D", "Creative tools (DASZFRAME)", "Racing games"],
-    skills: ["Unity", "C#", "Blender", "Three.js", "HTML, CSS, JavaScript", "Game design", "Prompting AI for code", "Lesson design"]
+    disciplines: [
+      { title: "Game design", text: "Core loops, controls, levels, cameras and pacing. Prototype fast, cut hard.", tools: ["Unity", "C#", "Level design", "Playtesting"] },
+      { title: "3D art", text: "Stylised and hard-surface vehicles, characters and props, from blockout to hand-painted textures.", tools: ["Blender", "Hand-painted textures", "Clay and toon renders"] },
+      { title: "2D art and animation", text: "Character painting, value and colour studies, game assets and frame-by-frame animation.", tools: ["Heavy Paint", "Concept sketching", "2D animation"] },
+      { title: "Web and tools", text: "Playable browser games and full web apps, from first idea to live site.", tools: ["Three.js", "HTML, CSS, JavaScript", "Supabase"] },
+      { title: "Teaching", text: "English lessons and learning tools, designed around how students actually learn.", tools: ["Lesson design", "Learning apps"] }
+    ],
+    highlights: [
+      { title: "Koi Quest: Reef Adventure", text: "Solo Unity game. Design, C#, levels and UI.", href: "#games" },
+      { title: "The Kingdom of Eldonia", text: "Team project. Painted game assets.", href: "#games" },
+      { title: "Scrap Racers", text: "My kart-style racer, in production.", href: "#top" },
+      { title: "Paint the Lesson", text: "A full web app for English teachers.", href: "#tools" }
+    ],
+    passions: ["Racing games", "Low-poly 3D", "Teaching English", "Learning Polish", "Creative tools (DASZFRAME)"]
   }
 };
