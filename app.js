@@ -57,7 +57,8 @@
   $("[data-soon-img]").src = C.image;
   text("[data-soon-title]", C.title); $("[data-soon-img]").alt = `${C.title} poster`; text("[data-soon-edition]", C.edition); text("[data-soon-teaser]", C.teaser); text("[data-soon-status]", C.status);
   const pr = $("[data-soon-progress]"); pr.innerHTML = `<span style="--p:${clamp(C.progress)}%"></span>`; pr.setAttribute("aria-label", `About ${clamp(C.progress)}% done`);
-  fill("[data-soon-milestones]", C.milestones.map((m, i) => `<li class="${i < C.milestoneDone ? "done" : i === C.milestoneDone ? "now" : ""}">${esc(m)}${i === C.milestoneDone ? " (working on it now)" : ""}</li>`).join(""));
+  { const pl = $("[data-soon-progress-label]"); const now = (C.milestones || [])[C.milestoneDone];
+    if (pl) pl.textContent = `${clamp(C.progress)}% built` + (now ? ` · now: ${now}` : ""); }
   const proto = D.games.find(g => g.id === C.prototype);
   fill("[data-soon-actions]", link(C.follow, C.followText || "Follow the progress", "btn btn-solid") + (proto && proto.play ? `<button class="btn" type="button" data-play="${proto.id}">${I.play}Play the prototype</button>` : ""));
   function clamp(v) { return Math.max(0, Math.min(100, +v || 0)); }
@@ -122,6 +123,21 @@
   const closePlayer = () => { player.close(); };
   $("[data-player-close]").addEventListener("click", closePlayer);
   player.addEventListener("close", () => { frame.src = "about:blank"; });
+
+  /* ---------- sketchbook ---------- */
+  const SK = D.sketchbook || [];
+  if (SK.length) {
+    $("#sketchbook").hidden = false;
+    fill("[data-sketches]", SK.map((s, i) => `<figure class="sketch"><button type="button" data-sketch="${i}" aria-label="View ${esc(s.title)} larger"><img src="${esc(s.src)}" alt="${esc(s.title)}" loading="lazy"></button>
+      <figcaption><b>${esc(s.title)}</b>${s.note ? `<span>${esc(s.note)}</span>` : ""}</figcaption></figure>`).join(""));
+    const lb = $(".lightbox");
+    document.addEventListener("click", e => {
+      const b = e.target.closest("[data-sketch]"); if (!b) return;
+      const s = SK[+b.dataset.sketch]; $("[data-lb-img]").src = s.src; $("[data-lb-img]").alt = s.title;
+      $("[data-lb-cap]").innerHTML = `<b>${esc(s.title)}</b>${s.note ? ` · ${esc(s.note)}` : ""}`; lb.showModal();
+    });
+    lb.addEventListener("click", e => { if (e.target === lb || e.target.closest("[data-lb-close]") || e.target.tagName === "IMG") lb.close(); });
+  }
 
   /* ---------- details ---------- */
   const details = $(".details");

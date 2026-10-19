@@ -9,7 +9,7 @@ window.PORTFOLIO = {
   handle: "Dasz",
   role: "Game designer & developer",
   place: "Rzeszów, Poland",
-  intro: "I make games for the browser and for Unity, model in Blender, and build learning tools for my English students. Some projects are mine from the first sketch to the last line, some are made with friends, and some are personal projects where I direct the whole build.",
+  intro: "I design games, model in Blender, and build learning tools.",
   email: "mikekahuhu@gmail.com",
   socials: {                                        // add instagram, facebook or itch the same way; empty ones are hidden
     artstation: "https://mxyzptlk.artstation.com/",
@@ -113,6 +113,13 @@ window.PORTFOLIO = {
     { title: "Linden tree", note: "Jazda!", src: "assets/models/tree.glb", tools: "Built in code" },
     { title: "Poster column", note: "Jazda!", src: "assets/models/column.glb", tools: "Built in code" },
     { title: "Mars rover", note: "Vehicle", src: "assets/models/mars-rover.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 95%" }
+  ],
+
+  /* Sketchbook: concept art, sketches, mood boards, wireframes. Put images in assets/sketches/ (any shape). */
+  sketchbook: [
+    { src: "assets/scrap-racers.jpg", title: "Scrap Racers", note: "Key art" },
+    { src: "assets/koi-poster.jpg", title: "Koi Quest", note: "Poster" },
+    { src: "assets/covers/eldonia-1.jpg", title: "The Kingdom of Eldonia", note: "Title art, Heavy Paint" }
   ],
 
   /* Tools and other things I've built */

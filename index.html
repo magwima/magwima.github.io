@@ -20,7 +20,7 @@
 <header class="nav">
   <a class="brand" href="#top" aria-label="Back to top"><span class="mark" aria-hidden="true"></span><span class="brand-name"></span></a>
   <nav aria-label="Sections">
-    <a href="#games">Games</a><a href="#models">3D</a><a href="#tools">Tools</a><a href="#about">About</a>
+    <a href="#games">Games</a><a href="#models">3D</a><a href="#sketchbook">Sketchbook</a><a href="#tools">Tools</a><a href="#about">About</a>
   </nav>
   <div class="socials" data-socials></div>
 </header>
@@ -36,20 +36,16 @@
       <p class="soon-kicker"><span class="pulse" aria-hidden="true"></span>Coming soon</p>
       <h1 id="soon-title" data-soon-title></h1>
       <p class="soon-edition" data-soon-edition></p>
-      <p class="soon-teaser" data-soon-teaser></p>
       <div class="progress" role="img" data-soon-progress></div>
-      <ol class="milestones" data-soon-milestones></ol>
+      <p class="progress-label" data-soon-progress-label></p>
       <div class="soon-actions" data-soon-actions></div>
     </div>
   </section>
 
   <!-- Who -->
   <section class="intro" aria-label="Introduction">
-    <h2 class="intro-name"><span data-name></span><small data-role></small></h2>
-    <div class="intro-text">
-      <p data-intro></p>
-      <p class="intro-links"><a class="btn btn-solid" href="#games">See the games</a><a class="btn" data-email>Email me</a></p>
-    </div>
+    <h2 class="intro-name"><span data-name></span> <small data-role></small></h2>
+    <p class="intro-line" data-intro></p>
   </section>
 
   <!-- Games -->
@@ -69,6 +65,15 @@
     </div>
     <div class="reel" data-reel hidden></div>
     <div class="rail" data-models tabindex="0" aria-label="3D models, scroll sideways"></div>
+  </section>
+
+  <!-- Sketchbook -->
+  <section class="sketchbook" id="sketchbook" aria-labelledby="sketch-title" hidden>
+    <div class="section-head">
+      <h2 id="sketch-title">Sketchbook</h2>
+      <p class="section-note">Concept art, sketches and process. Click to see it big.</p>
+    </div>
+    <div class="sketch-grid" data-sketches></div>
   </section>
 
   <!-- Tools -->
@@ -94,6 +99,9 @@
     </div>
   </section>
 </main>
+
+<dialog class="lightbox" aria-label="Artwork"><button class="btn btn-small close" type="button" data-lb-close>Close</button><figure><img alt="" data-lb-img><figcaption data-lb-cap></figcaption></figure></dialog>
+
 
 <footer class="foot">
   <div class="foot-mail-wrap"><p class="foot-lead">Want to make something together?</p><a class="foot-mail" data-email></a></div>
