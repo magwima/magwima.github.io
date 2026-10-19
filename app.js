@@ -131,24 +131,26 @@
   const loopVideo = (src, poster, cls = "") => `<video class="${cls}" ${poster ? `poster="${esc(poster)}"` : ""} muted loop playsinline preload="none"><source src="${esc(src.replace(/\.mp4$/, ".webm"))}" type="video/webm"><source src="${esc(src)}" type="video/mp4"></video>`;
   const watch = root => $$("video", root).forEach(v => { if (vio) vio.observe(v); else v.preload = "metadata"; });
 
-  /* ---------- turntables: clay and final ---------- */
+  /* ---------- turntables: several renders of one model ---------- */
   const TT = D.turntables || [];
   if (TT.length) {
     const box = $("[data-turns]"); box.hidden = false;
-    box.innerHTML = `<h3 class="turns-h">Turntables <span>Clay render and finished model</span></h3><div class="turns-row">${TT.map((t, i) => `<figure class="turn" data-turn="${i}">
-      <div class="turn-stage">${loopVideo(t.final, t.poster, "on")}${loopVideo(t.clay, t.clay.replace(/\.mp4$/, ".jpg"))}
-        <div class="turn-toggle" role="group" aria-label="Render"><button type="button" aria-pressed="true" data-show="final">${esc(t.finalLabel || "Final")}</button><button type="button" aria-pressed="false" data-show="clay">Clay</button></div></div>
+    const still = v => v.poster || v.src.replace(/\.mp4$/, ".jpg");
+    box.innerHTML = `<h3 class="turns-h">Turntables <span>Switch between the finished model and its clay or X-ray render</span></h3><div class="turns-row">${TT.map((t, i) => `<figure class="turn${t.big ? " big" : ""}" data-turn="${i}">
+      <div class="turn-stage">${t.views.map((v, k) => loopVideo(v.src, still(v), k ? "" : "on")).join("")}
+        ${t.views.length > 1 ? `<div class="turn-toggle" role="group" aria-label="Render">${t.views.map((v, k) => `<button type="button" aria-pressed="${!k}" data-view="${k}">${esc(v.label)}</button>`).join("")}</div>` : ""}</div>
       <figcaption class="model-cap"><b>${esc(t.title)}</b><span>${esc(t.note || "")}</span></figcaption></figure>`).join("")}</div>`;
     $$(".turn", box).forEach(f => {
-      const [fin, clay] = $$("video", f);
-      $$("[data-show]", f).forEach(b => b.addEventListener("click", () => {
-        const showClay = b.dataset.show === "clay", from = showClay ? fin : clay, to = showClay ? clay : fin;
-        try { to.currentTime = from.currentTime; } catch (e) {}
+      const vids = $$("video", f);
+      $$("[data-view]", f).forEach(b => b.addEventListener("click", () => {
+        const from = vids.find(v => v.classList.contains("on")), to = vids[+b.dataset.view]; if (from === to) return;
+        try { to.currentTime = from.currentTime % (to.duration || 1e9); } catch (e) {}
         to.classList.add("on"); from.classList.remove("on");
+        if (vio) { vio.unobserve(from); vio.observe(to); }
         if (!reduced) { const p = to.play(); if (p && p.catch) p.catch(() => {}); } from.pause();
-        $$("[data-show]", f).forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+        $$("[data-view]", f).forEach(x => x.setAttribute("aria-pressed", String(x === b)));
       }));
-      if (vio) vio.observe(fin); else fin.preload = "metadata";
+      if (vio) vio.observe(vids[0]); else vids[0].preload = "metadata";
     });
   }
 

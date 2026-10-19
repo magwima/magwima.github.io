@@ -96,10 +96,13 @@ window.PORTFOLIO = {
   /* Showreel at the top of the 3D section. Any YouTube link works; leave youtube "" to hide it. */
   showreel: { title: "Showreel", year: 2024, note: "A showreel of my 3D models.", youtube: "https://youtu.be/_7HarJloqvs" },
 
-  /* Turntables: a clay render and the finished render of the same model (silent .mp4 loops) */
+  /* Turntables: the same model rendered different ways (silent .mp4 loops, each with a .webm and .jpg of the same name) */
   turntables: [
-    { title: "Gunship", note: "Hard-surface vehicle", clay: "assets/turntables/gunship-clay.mp4", final: "assets/turntables/gunship-final.mp4", poster: "assets/turntables/gunship-final.jpg", finalLabel: "Textured" },
-    { title: "Scout ship", note: "Stylised vehicle", clay: "assets/turntables/scout-clay.mp4", final: "assets/turntables/scout-final.mp4", poster: "assets/turntables/scout-final.jpg", finalLabel: "Toon shaded" }
+    { title: "Tugboat", note: "Stylised vehicle, hand-painted textures", big: true, views: [{ label: "Textured", src: "assets/turntables/tugboat-final.mp4" }, { label: "Clay", src: "assets/turntables/tugboat-clay.mp4" }] },
+    { title: "Gunship", note: "Hard-surface vehicle", views: [{ label: "Textured", src: "assets/turntables/gunship-final.mp4" }, { label: "Clay", src: "assets/turntables/gunship-clay.mp4" }] },
+    { title: "Fairy", note: "Stylised character", views: [{ label: "Textured", src: "assets/turntables/fairy-final.mp4" }, { label: "Clay", src: "assets/turntables/fairy-clay.mp4" }] },
+    { title: "Crawler", note: "Tracked vehicle", views: [{ label: "Textured", src: "assets/turntables/crawler-final.mp4" }, { label: "Clay", src: "assets/turntables/crawler-clay.mp4" }, { label: "X-ray", src: "assets/turntables/crawler-xray.mp4" }] },
+    { title: "Bike", note: "Hard-surface", views: [{ label: "Textured", src: "assets/turntables/bike-final.mp4" }, { label: "Clay", src: "assets/turntables/bike-clay.mp4" }] }
   ],
 
   /* 3D models: export from Blender as .glb (File → Export → glTF 2.0, format "glTF Binary") into assets/models/ */
@@ -127,10 +130,16 @@ window.PORTFOLIO = {
     { src: "assets/sketches/dunk.jpg", title: "Dunk", note: "Digital painting" },
     { src: "assets/sketches/dunk-sketch.jpg", video: "assets/sketches/dunk-sketch.mp4", title: "Dunk", note: "First motion sketch" },
     { src: "assets/sketches/fox-mask.jpg", title: "Fox mask", note: "Digital painting" },
+    { src: "assets/sketches/truck-sketch-to-3d.jpg", video: "assets/sketches/truck-sketch-to-3d.mp4", title: "Truck", note: "From sketch to 3D model" },
+    { src: "assets/sketches/portrait-back.jpg", title: "Portrait", note: "Flat colour" },
     { src: "assets/sketches/gentleman.jpg", title: "The gentleman", note: "Portrait" },
+    { src: "assets/sketches/street-painting.jpg", video: "assets/sketches/street-painting.mp4", title: "Street scene", note: "Painting process" },
+    { src: "assets/sketches/portrait-face.jpg", title: "Portrait", note: "Flat colour" },
     { src: "assets/sketches/one-on-one.jpg", title: "One on one", note: "Character illustration" },
+    { src: "assets/sketches/truck-values.jpg", title: "Field truck", note: "Value study" },
+    { src: "assets/sketches/truck-colour.jpg", title: "Field truck", note: "Colour study and palette" },
     { src: "assets/sketches/street-singer.jpg", title: "Street singer", note: "Character illustration" },
-    { src: "assets/sketches/dilemma.jpg", video: "assets/sketches/dilemma.mp4", title: "Dilemma", note: "2D animation, painted backgrounds", wide: true }
+    { src: "assets/sketches/dilemma.jpg", video: "assets/sketches/dilemma.mp4", title: "Dilemma", note: "2D animation, painted backgrounds" }
   ],
 
   /* Tools and other things I've built */
