@@ -5,7 +5,7 @@
    Leave a link as "" to hide its button.
    ===================================================================== */
 window.PORTFOLIO = {
-  name: "Michael Kahuhu",
+  name: "Michael Kagwima",
   handle: "Dasz",
   role: "Game designer & developer",
   place: "Rzeszów, Poland",
@@ -62,7 +62,7 @@ window.PORTFOLIO = {
       summary: "A pixel-art platformer. As the heir of a knight family you gather magic crystals to lift the curse on your homeland, using a Time-Shift watch to travel into the past near the Statue of the Angel.",
       role: "Game assets, painted in Heavy Paint.",
       tools: ["Heavy Paint", "Pixel art"],
-      team: "Indo-Bulgarian League: Shaay, IvanSI139, Vorqen and me (Kahuhu)",
+      team: "Indo-Bulgarian League: Shaay, IvanSI139, Vorqen and me (Kagwima)",
       images: ["assets/covers/eldonia-1.jpg"],
       itch: "https://shaaylmao.itch.io/the-kingdom-of-eldonia"   // Windows download, so it opens on itch.io
     },
