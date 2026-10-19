@@ -102,7 +102,8 @@ window.PORTFOLIO = {
     { title: "Gunship", note: "Hard-surface vehicle", views: [{ label: "Textured", src: "assets/turntables/gunship-final.mp4" }, { label: "Clay", src: "assets/turntables/gunship-clay.mp4" }] },
     { title: "Hover racer", note: "Vehicle concept", views: [{ label: "Textured", src: "assets/turntables/hover-final.mp4" }, { label: "Clay", src: "assets/turntables/hover-clay.mp4" }] },
     { title: "Fairy", note: "Stylised character", views: [{ label: "Textured", src: "assets/turntables/fairy-final.mp4" }, { label: "Clay", src: "assets/turntables/fairy-clay.mp4" }] },
-    { title: "Crawler", note: "Tracked vehicle", views: [{ label: "Textured", src: "assets/turntables/crawler-final.mp4" }, { label: "Clay", src: "assets/turntables/crawler-clay.mp4" }, { label: "X-ray", src: "assets/turntables/crawler-xray.mp4" }] },
+    { title: "Hauler", note: "Hard-surface vehicle", views: [{ label: "Textured", src: "assets/turntables/hauler-final.mp4" }, { label: "Clay", src: "assets/turntables/hauler-clay.mp4" }] },
+    { title: "Crawler", note: "Tracked vehicle", big: true, views: [{ label: "Textured", src: "assets/turntables/crawler-final.mp4" }, { label: "Clay", src: "assets/turntables/crawler-clay.mp4" }, { label: "X-ray", src: "assets/turntables/crawler-xray.mp4" }] },
     { title: "Jet kart", note: "Vehicle concept", views: [{ label: "Textured", src: "assets/turntables/kart-final.mp4" }, { label: "Clay", src: "assets/turntables/kart-clay.mp4" }] },
     { title: "Bike", note: "Hard-surface", views: [{ label: "Textured", src: "assets/turntables/bike-final.mp4" }, { label: "Clay", src: "assets/turntables/bike-clay.mp4" }] }
   ],
@@ -135,6 +136,7 @@ window.PORTFOLIO = {
     { src: "assets/sketches/ocean.jpg", video: "assets/sketches/ocean.mp4", title: "Open sea", note: "3D environment, sunset" },
     { src: "assets/sketches/tide.jpg", video: "assets/sketches/tide.mp4", title: "Tide", note: "2D animation loop" },
     { src: "assets/sketches/climb.jpg", video: "assets/sketches/climb.mp4", title: "Ladder climb", note: "Character animation" },
+    { src: "assets/sketches/sketch-to-paint.jpg", video: "assets/sketches/sketch-to-paint.mp4", title: "Sketch to paint", note: "Pencil sketch to finished portrait" },
     { src: "assets/sketches/dunk-sketch.jpg", video: "assets/sketches/dunk-sketch.mp4", title: "Dunk", note: "First motion sketch" },
     { src: "assets/sketches/dunk.jpg", title: "Dunk", note: "Digital painting" },
     { src: "assets/sketches/fox-mask.jpg", title: "Fox mask", note: "Digital painting" },
