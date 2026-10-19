@@ -181,7 +181,7 @@ window.PORTFOLIO = {
     disciplines: [
       { title: "Game design", text: "Core loops, controls, levels, cameras and pacing. Prototype fast, cut hard.", tools: ["Unity", "C#", "Level design", "Playtesting"] },
       { title: "3D art", text: "Stylised and hard-surface vehicles, characters and props, from blockout to hand-painted textures.", tools: ["Blender", "Hand-painted textures", "Clay and toon renders"] },
-      { title: "2D art and animation", text: "Character painting, value and colour studies, game assets and frame-by-frame animation.", tools: ["Heavy Paint", "Concept sketching", "2D animation"] },
+      { title: "2D art and animation", text: "Concept art, character painting, value and colour studies, game assets and frame-by-frame animation.", tools: ["Heavy Paint", "Photoshop", "Concept art", "2D animation"] },
       { title: "Web and tools", text: "Playable browser games and full web apps, from first idea to live site.", tools: ["Three.js", "HTML, CSS, JavaScript", "Supabase"] },
       { title: "Teaching", text: "English lessons and learning tools, designed around how students actually learn.", tools: ["Lesson design", "Learning apps"] }
     ],
@@ -191,6 +191,6 @@ window.PORTFOLIO = {
       { title: "Scrap Racers", text: "My kart-style racer, in production.", href: "#top" },
       { title: "Paint the Lesson", text: "A full web app for English teachers.", href: "#tools" }
     ],
-    passions: ["Racing games", "Low-poly 3D", "Teaching English", "Learning Polish", "Creative tools (DASZFRAME)"]
+    passions: ["Game design", "3D modelling, low-poly and beyond", "Concept art", "Building creative tools (DASZFRAME)", "Racing games"]
   }
 };
