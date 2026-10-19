@@ -137,7 +137,6 @@ window.PORTFOLIO = {
     { src: "assets/sketches/tide.jpg", video: "assets/sketches/tide.mp4", title: "Tide", note: "2D animation loop" },
     { src: "assets/sketches/climb.jpg", video: "assets/sketches/climb.mp4", title: "Ladder climb", note: "Character animation" },
     { src: "assets/sketches/sketch-to-paint.jpg", video: "assets/sketches/sketch-to-paint.mp4", title: "Sketch to paint", note: "Pencil sketch to finished portrait" },
-    { src: "assets/sketches/dunk-sketch.jpg", video: "assets/sketches/dunk-sketch.mp4", title: "Dunk", note: "First motion sketch" },
     { src: "assets/sketches/dunk.jpg", title: "Dunk", note: "Digital painting" },
     { src: "assets/sketches/fox-mask.jpg", title: "Fox mask", note: "Digital painting" },
     { src: "assets/sketches/portrait-back.jpg", title: "Portrait", note: "Flat colour" },
