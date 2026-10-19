@@ -96,12 +96,6 @@ window.PORTFOLIO = {
   /* Tools and other things I've built */
   tools: [
     {
-      title: "Paint the Lesson", tagline: "A ready English lesson in two minutes, and a course platform for teachers",
-      summary: "Turns any article, PDF or YouTube transcript into a full lesson with worksheets, Canva slides and teacher notes. Lessons become courses with auto-marked quizzes, homework marking, timed release, progress tracking, live-lesson calendar and certificates. Built on Supabase.",
-      images: ["assets/covers/paint-1.jpg", "assets/covers/paint-2.jpg", "assets/covers/paint-3.jpg"],
-      link: "https://magwima.github.io/Paint-the-Lesson/", linkText: "Open Paint the Lesson"
-    },
-    {
       title: "English Engine", tagline: "A practice website for my English students",
       summary: "Daily plans, monthly vocabulary from A1 to C2 with Polish and Romanian help, a tense lab, irregular verbs, a video of the week, pronunciation and three word games.",
       images: ["assets/covers/english-1.jpg", "assets/covers/english-2.jpg"],
@@ -112,11 +106,17 @@ window.PORTFOLIO = {
       summary: "A Polish-learning game for English speakers, as a web page and a Chrome extension: word tiles, verb forms, listening, dialogues and A2–B1 grammar with spaced review.",
       images: ["assets/covers/polski-1.jpg", "assets/covers/polski-3.jpg"],
       link: "https://chromewebstore.google.com/detail/emgbepamegcncjkmjjfbckelagmemhii", linkText: "Add to Chrome"
+    },
+    {
+      title: "Paint the Lesson", tagline: "A ready English lesson in two minutes, and a course platform for teachers",
+      summary: "Turns any article, PDF or YouTube transcript into a full lesson with worksheets, Canva slides and teacher notes. Lessons become courses with auto-marked quizzes, homework marking, timed release, progress tracking, live-lesson calendar and certificates. Built on Supabase.",
+      images: ["assets/covers/paint-1.jpg", "assets/covers/paint-2.jpg", "assets/covers/paint-3.jpg"],
+      link: "https://magwima.github.io/Paint-the-Lesson/", linkText: "Open Paint the Lesson"
     }
   ],
 
   about: {
-    photo: "",                                       // ← e.g. "assets/me.jpg" (square)
+    photo: "assets/me.jpg",                         // square photo
     paragraphs: [
       "I studied game design and development, and 3D modelling. I also teach English and design my own lessons.",
       "I like games you understand in five seconds and keep playing for an hour. I sketch characters, model them in Blender, and use AI as a fast pair of hands when an idea needs to be playable today."
