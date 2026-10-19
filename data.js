@@ -54,7 +54,7 @@ window.PORTFOLIO = {
     },
     {
       id: "koi", title: "Koi Quest: Reef Adventure", year: 2026, kind: "solo", engine: "Unity · 3D",
-      summary: "A third-person underwater adventure. Steer a koi through the reef, dash past jellyfish and sharks, and fight back with bubble shots. My undergraduate thesis game at UITM Rzeszów.",
+      summary: "A third-person underwater adventure. Steer a koi through the reef, dash past jellyfish and sharks, and fight back with bubble shots.",
       role: "Everything: design, Unity programming in C#, level building and UI.",
       tools: ["Unity", "C#", "Blender"],
       images: ["assets/covers/koi-1.jpg", "assets/covers/koi-2.jpg"],   // full poster: assets/koi-poster.jpg
@@ -118,11 +118,12 @@ window.PORTFOLIO = {
   about: {
     photo: "",                                       // ← e.g. "assets/me.jpg" (square)
     paragraphs: [
-      "I studied game design and development at UITM Rzeszów, where I built Koi Quest for my thesis. I also teach English and design my own lessons.",
+      "I studied game design and development, and 3D modelling. I also teach English and design my own lessons.",
       "I like games you understand in five seconds and keep playing for an hour. I sketch characters, model them in Blender, and use AI as a fast pair of hands when an idea needs to be playable today."
     ],
     education: [
-      { what: "Game design and development (undergraduate)", where: "UITM Rzeszów", when: "", detail: "Thesis: Koi Quest, a 3D action-adventure game in Unity" }
+      { what: "Game design and development", where: "", when: "", detail: "" },
+      { what: "3D modelling", where: "", when: "", detail: "" }
     ],
     passions: ["Teaching English", "Learning Polish", "Low-poly 3D", "Creative tools (DASZFRAME)", "Racing games"],
     skills: ["Unity", "C#", "Blender", "Three.js", "HTML, CSS, JavaScript", "Game design", "Prompting AI for code", "Lesson design"]
