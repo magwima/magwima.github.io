@@ -137,13 +137,7 @@ window.PORTFOLIO = {
     { src: "assets/sketches/tide.jpg", video: "assets/sketches/tide.mp4", title: "Tide", note: "2D animation loop" },
     { src: "assets/sketches/climb.jpg", video: "assets/sketches/climb.mp4", title: "Ladder climb", note: "Character animation" },
     { src: "assets/sketches/sketch-to-paint.jpg", video: "assets/sketches/sketch-to-paint.mp4", title: "Sketch to paint", note: "Pencil sketch to finished portrait" },
-    { src: "assets/sketches/dunk.jpg", title: "Dunk", note: "Digital painting" },
-    { src: "assets/sketches/fox-mask.jpg", title: "Fox mask", note: "Digital painting" },
-    { src: "assets/sketches/portrait-back.jpg", title: "Portrait", note: "Flat colour" },
     { src: "assets/sketches/gentleman.jpg", title: "The gentleman", note: "Portrait" },
-    { src: "assets/sketches/portrait-face.jpg", title: "Portrait", note: "Flat colour" },
-    { src: "assets/sketches/one-on-one.jpg", title: "One on one", note: "Character illustration" },
-    { src: "assets/sketches/truck-colour.jpg", title: "Field truck", note: "Colour study and palette" }
   ],
 
   /* Tools and other things I've built */
