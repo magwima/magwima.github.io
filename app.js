@@ -35,8 +35,43 @@
       <rect width="1280" height="720" fill="url(#fire)"/>
       <g fill="#140806">${[[40, 260, 160], [220, 330, 120], [360, 200, 150], [540, 300, 110], [680, 160, 170], [880, 280, 130], [1030, 220, 160], [1190, 320, 110]].map(([x, h, w]) => `<path d="M${x} 720 V${720 - h} l${w * 0.3} 30 l${w * 0.2} -50 l${w * 0.3} 40 l${w * 0.2} -20 V720z"/>`).join("")}</g>
       <g fill="#ffb347">${Array.from({ length: 40 }, (_, i) => `<circle cx="${(i * 233) % 1280}" cy="${720 - ((i * 97) % 520)}" r="${2 + (i % 3)}" opacity="${0.4 + (i % 5) / 10}"/>`).join("")}</g>
-      <rect y="560" width="1280" height="160" fill="#0c0504"/></svg>`
+      <rect y="560" width="1280" height="160" fill="#0c0504"/></svg>`,
+    // Word Grove covers: wooden letter tiles on a moss background
+    hunt: wgCover("hunt"), rush: wgCover("rush"), cross: wgCover("cross")
   };
+  function wgCover(kind) {
+    const tile = (x, y, s, ch, opt = {}) => `<g transform="translate(${x} ${y})${opt.rot ? ` rotate(${opt.rot})` : ""}"${opt.op ? ` opacity="${opt.op}"` : ""}>
+      <rect x="${-s / 2 + 4}" y="${-s / 2 + 7}" width="${s}" height="${s}" rx="${s * 0.16}" fill="#1c2a17" opacity=".35"/>
+      <rect x="${-s / 2}" y="${-s / 2}" width="${s}" height="${s}" rx="${s * 0.16}" fill="${opt.fill || "#efe2c4"}" stroke="${opt.edge || "#c9b285"}" stroke-width="3"/>
+      <text y="${s * 0.17}" text-anchor="middle" font-family="Zilla Slab,Rockwell,Georgia,serif" font-weight="700" font-size="${s * 0.5}" fill="#3b2e1f">${ch}</text></g>`;
+    const leaves = Array.from({ length: 16 }, (_, i) => { const x = (i * 211) % 1280, y = (i * 137) % 720, r = (i * 47) % 360, s = 0.9 + (i % 4) * 0.35;
+      return `<path transform="translate(${x} ${y}) rotate(${r}) scale(${s * 2.2})" d="M4 21C4 11 9 4 21 3c-1 12-7 17-17 18z" fill="#86a86a" opacity=".22"/>`; }).join("");
+    let body = "";
+    if (kind === "hunt") {
+      const rows = ["GLADEPOK", "RTWILLOW", "OMBRANCH", "VFERNSUA", "ESAPLING"], S = 104;
+      rows.forEach((row, r) => [...row].forEach((ch, c) => { body += tile(196 + c * (S + 6), 132 + r * (S + 6), S, ch); }));
+      body += `<rect x="${196 - 50 + 2 * 110}" y="${132 + 2 * 110 - 46}" width="${6 * 110 - 12}" height="92" rx="46" fill="none" stroke="#4f86a0" stroke-width="10" opacity=".85"/>`;
+      body += `<rect x="${196 - 46}" y="${132 - 46}" width="92" height="${4 * 110 + 92}" rx="46" fill="none" stroke="#cf9a33" stroke-width="10" opacity=".85"/>`;
+      body += `<g transform="translate(1135 590)"><circle r="70" fill="#f7f8f1" opacity=".95"/><circle cx="-10" cy="-10" r="32" fill="none" stroke="#47663a" stroke-width="12"/><path d="M14 14l30 30" stroke="#47663a" stroke-width="14" stroke-linecap="round"/></g>`;
+    } else if (kind === "rush") {
+      const grid = ["SEEDLR", "TAWORD", "RUSHEN", "IMBLOT", "PGRAVE"], S = 100;
+      grid.forEach((row, r) => [...row].forEach((ch, c) => { const seed = r === 2 && c === 2;
+        const inWord = r === 2 && c < 4;
+        body += tile(330 + c * 106, 170 + r * 106, S, ch, seed ? { fill: "#d3e0c4", edge: "#47663a" } : inWord ? { fill: "#f1d79f", edge: "#cf9a33" } : {}); }));
+      body += tile(1040, 90, 92, "Q", { rot: -14, op: .9 }) + tile(1150, 210, 80, "Z", { rot: 18, op: .75 }) + tile(1010, 300, 70, "K", { rot: 8, op: .55 });
+      body += `<g transform="translate(1080 570)"><circle r="96" fill="#f7f8f1" opacity=".95"/><circle r="70" fill="none" stroke="#c9d1bb" stroke-width="16"/><path d="M0 -70 A70 70 0 1 1 -66 24" fill="none" stroke="#b8683f" stroke-width="16" stroke-linecap="round"/><path d="M0 -38 V0 L22 18" stroke="#1e2a1d" stroke-width="10" stroke-linecap="round" fill="none"/></g>`;
+    } else {
+      const N = 9, S = 60, x0 = 361, y0 = 34, bonus = { "0,0": "#e3ab88", "0,8": "#e3ab88", "8,0": "#e3ab88", "8,8": "#e3ab88", "4,4": "#f1d79f", "2,6": "#a9cbd8", "6,2": "#a9cbd8", "1,3": "#cfe0c0", "7,5": "#cfe0c0", "3,7": "#f1d79f", "5,1": "#f1d79f" };
+      for (let r = 0; r < N; r++) for (let c = 0; c < N; c++) body += `<rect x="${x0 + c * (S + 2)}" y="${y0 + r * (S + 2)}" width="${S}" height="${S}" rx="8" fill="${bonus[r + "," + c] || "#dfe4d2"}" opacity=".92"/>`;
+      const at = (r, c, ch, o) => tile(x0 + c * (S + 2) + S / 2, y0 + r * (S + 2) + S / 2, S - 4, ch, o);
+      [..."FOREST"].forEach((ch, i) => body += at(4, 1 + i, ch));
+      [..."MOSS"].forEach((ch, i) => i !== 1 && (body += at(3 + i, 2, ch)));              // crosses the O of FOREST
+      [..."TREE"].forEach((ch, i) => i && (body += at(4 + i, 6, ch, { fill: "#d3e0c4", edge: "#47663a" })));   // new move, hangs off the T
+      body += `<g transform="translate(640 660)">${[..."WORDS"].map((ch, i) => tile((i - 2) * 84, 0, 72, ch)).join("")}</g>`;
+    }
+    return `<svg class="art" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><radialGradient id="wg-${kind}" cx=".5" cy=".4" r=".8"><stop offset="0" stop-color="#5b7d49"/><stop offset="1" stop-color="#22351c"/></radialGradient></defs>
+      <rect width="1280" height="720" fill="url(#wg-${kind})"/>${leaves}${body}</svg>`;
+  }
 
   /* ---------- small helpers ---------- */
   const fill = (sel, html) => $$(sel).forEach(el => el.innerHTML = html);
