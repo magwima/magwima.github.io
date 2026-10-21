@@ -110,6 +110,7 @@ window.PORTFOLIO = {
 
   /* 3D models: export from Blender as .glb (File → Export → glTF 2.0, format "glTF Binary") into assets/models/ */
   models: [
+    { title: "Dragon café", note: "Building", src: "assets/models/dragon-cafe.glb", tools: "Modelled in Blender", orbit: "20deg 78deg 100%" },
     { title: "Dasz's truck", note: "Scrap Racers", src: "assets/models/dasz-truck.glb", tools: "Modelled in Blender", orbit: "-140deg 76deg 92%", big: true },
     { title: "Dave's truck", note: "Scrap Racers", src: "assets/models/dave-truck.glb", tools: "Modelled in Blender", orbit: "-140deg 76deg 110%" },
     { title: "Rosie's truck", note: "Scrap Racers", src: "assets/models/rosie-truck.glb", tools: "Modelled in Blender", orbit: "-140deg 76deg 110%" },
