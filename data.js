@@ -118,15 +118,13 @@ window.PORTFOLIO = {
     { title: "Statue", note: "Sculpt", src: "assets/models/statue.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 100%" },
     { title: "Rocking chair", note: "Furniture", src: "assets/models/rocking-chair.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 100%" },
     { title: "Couch", note: "Furniture", src: "assets/models/couch.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 100%" },
-    { title: "Green girl", note: "Character", src: "assets/models/green-girl.glb", tools: "Modelled in Blender", orbit: "20deg 80deg 100%" },
-    { title: "Man", note: "Character", src: "assets/models/man.glb", tools: "Modelled in Blender", orbit: "20deg 80deg 100%" },
     { title: "Stary", note: "Skater from Jazda!", src: "assets/models/skater-stary.glb", tools: "Built in code" },
     { title: "Ola", note: "Skater from Jazda!", src: "assets/models/skater-ola.glb", tools: "Built in code" },
     { title: "Warsaw tram", note: "Jazda!", src: "assets/models/tram.glb", tools: "Built in code" },
     { title: "Pączuś kiosk", note: "Jazda!", src: "assets/models/kiosk.glb", tools: "Built in code" },
     { title: "Linden tree", note: "Jazda!", src: "assets/models/tree.glb", tools: "Built in code" },
     { title: "Poster column", note: "Jazda!", src: "assets/models/column.glb", tools: "Built in code" },
-    { title: "Yellow plane", note: "Vehicle", src: "assets/models/yellow-plane.glb", tools: "Modelled in Blender", orbit: "35deg 70deg 95%" }
+    { title: "Mars rover", note: "Vehicle", src: "assets/models/mars-rover.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 95%" }
   ],
 
   /* Sketchbook: concept art, sketches, mood boards, wireframes. Put images in assets/sketches/ (any shape). */
