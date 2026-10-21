@@ -123,8 +123,7 @@ window.PORTFOLIO = {
     { title: "Warsaw tram", note: "Jazda!", src: "assets/models/tram.glb", tools: "Built in code" },
     { title: "Pączuś kiosk", note: "Jazda!", src: "assets/models/kiosk.glb", tools: "Built in code" },
     { title: "Linden tree", note: "Jazda!", src: "assets/models/tree.glb", tools: "Built in code" },
-    { title: "Poster column", note: "Jazda!", src: "assets/models/column.glb", tools: "Built in code" },
-    { title: "Mars rover", note: "Vehicle", src: "assets/models/mars-rover.glb", tools: "Modelled in Blender", orbit: "35deg 72deg 95%" }
+    { title: "Poster column", note: "Jazda!", src: "assets/models/column.glb", tools: "Built in code" }
   ],
 
   /* Sketchbook: concept art, sketches, mood boards, wireframes. Put images in assets/sketches/ (any shape). */
