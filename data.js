@@ -92,7 +92,7 @@ window.PORTFOLIO = {
       },
       play: "https://magwima.github.io/Vaccum-Racer/", repo: "https://github.com/magwima/Vaccum-Racer"
     },
-    /* Word Grove: three word games for English learners, from English Engine. "?solo" opens one game on its own. */
+    /* Word Grove: three word games for English learners, from Psotek English. "?solo" opens one game on its own. */
     {
       id: "wordhunt", title: "Word Hunt", year: 2026, kind: "personal", engine: "Browser · word game", art: "hunt",
       summary: "A word search for English learners. Drag across the grid to find hidden words, or switch to Meanings mode and hunt from definitions instead.",
@@ -166,10 +166,10 @@ window.PORTFOLIO = {
   /* Tools and other things I've built */
   tools: [
     {
-      title: "English Engine", tagline: "A practice website for my English students",
-      summary: "Daily plans, monthly vocabulary from A1 to C2 with Polish and Romanian help, a tense lab, irregular verbs, a video of the week, pronunciation and three word games.",
-      images: ["assets/covers/english-1.jpg", "assets/covers/english-2.jpg"],
-      link: "https://magwima.github.io/English-Engine/", linkText: "Open English Engine"
+      title: "Psotek English", tagline: "English practice with a cheeky hedgehog",
+      summary: "A practice website for my English students, starring Psotek the hedgehog, who cheers streaks and teases mistakes. Daily plans, A1–C2 vocabulary with Polish and Romanian help, a grammar lab, a weekly video and reading, exam practice and three word games. Formerly English Engine.",
+      images: ["assets/covers/psotek-1.jpg", "assets/covers/psotek-2.jpg"],
+      link: "https://magwima.github.io/English-Engine/", linkText: "Open Psotek English"
     },
     {
       title: "Polski w kawałkach", tagline: "Polish in bite-size rounds",
