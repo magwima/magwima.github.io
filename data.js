@@ -98,21 +98,21 @@ window.PORTFOLIO = {
       summary: "A word search for English learners. Drag across the grid to find hidden words, or switch to Meanings mode and hunt from definitions instead.",
       role: "Game design and the vocabulary practice behind it, built for my English students. I directed the build with Claude as my coding partner.",
       tools: ["Claude", "HTML5", "Web Audio"],
-      play: "https://magwima.github.io/English-Engine/word-grove.html?solo#hunt", repo: "https://github.com/magwima/English-Engine"
+      play: "https://psotnyjez.com/word-grove.html?solo#hunt", repo: "https://github.com/magwima/English-Engine"
     },
     {
       id: "tilerush", title: "Tile Rush", year: 2026, kind: "personal", engine: "Browser · word game", art: "rush",
       summary: "A fast word game against the clock. Swipe across touching tiles in any direction to spell words, and long words grow a seed tile that clears its whole row and column.",
       role: "Game design and the vocabulary practice behind it, built for my English students. I directed the build with Claude as my coding partner.",
       tools: ["Claude", "HTML5", "Web Audio"],
-      play: "https://magwima.github.io/English-Engine/word-grove.html?solo#rush", repo: "https://github.com/magwima/English-Engine"
+      play: "https://psotnyjez.com/word-grove.html?solo#rush", repo: "https://github.com/magwima/English-Engine"
     },
     {
       id: "crossplay", title: "Crossplay", year: 2026, kind: "personal", engine: "Browser · word game", art: "cross",
       summary: "Build a crossword against Moss, the computer opponent. Every new word scores, and the coloured bonus squares multiply your points.",
       role: "Game design, rules and the computer opponent's behaviour, built for my English students. I directed the build with Claude as my coding partner.",
       tools: ["Claude", "HTML5", "Web Audio"],
-      play: "https://magwima.github.io/English-Engine/word-grove.html?solo#cross", repo: "https://github.com/magwima/English-Engine"
+      play: "https://psotnyjez.com/word-grove.html?solo#cross", repo: "https://github.com/magwima/English-Engine"
     }
   ],
 
@@ -169,7 +169,7 @@ window.PORTFOLIO = {
       title: "Psotek English", tagline: "English practice with a cheeky hedgehog",
       summary: "A practice website for my English students, starring Psotek the hedgehog, who cheers streaks and teases mistakes. Daily plans, A1–C2 vocabulary with Polish and Romanian help, a grammar lab, a weekly video and reading, exam practice and three word games. Formerly English Engine.",
       images: ["assets/covers/psotek-1.jpg", "assets/covers/psotek-2.jpg"],
-      link: "https://magwima.github.io/English-Engine/", linkText: "Open Psotek English"
+      link: "https://psotnyjez.com/", linkText: "Open Psotek English"
     },
     {
       title: "Polski w kawałkach", tagline: "Polish in bite-size rounds",
