@@ -166,6 +166,12 @@ window.PORTFOLIO = {
   /* Tools and other things I've built */
   tools: [
     {
+      title: "Smudgeon Paint", tagline: "A painting app that runs in the browser",
+      summary: "My open-source painting app: HeavyPaint's speed, Procreate-style brushes and Photoshop-style layers. 25 brushes with wet paint mixing, pressure and tilt, custom tips and grain, Procreate and Photoshop brush import, layers with masks and groups, liquify, animation with onion skin and a 3D sketch room. Works offline and installs on any device.",
+      images: ["assets/covers/smudgeon-1.jpg", "assets/covers/smudgeon-2.jpg", "assets/covers/smudgeon-3.jpg"],
+      link: "https://smudgeonpaint.com/", linkText: "Open Smudgeon Paint"
+    },
+    {
       title: "Psotek English", tagline: "English practice with a cheeky hedgehog",
       summary: "A practice website for my English students, starring Psotek the hedgehog, who cheers streaks and teases mistakes. Daily plans, A1–C2 vocabulary with Polish and Romanian help, a grammar lab, a weekly video and reading, exam practice and three word games. Formerly English Engine.",
       images: ["assets/covers/psotek-1.jpg", "assets/covers/psotek-2.jpg"],
@@ -203,13 +209,14 @@ window.PORTFOLIO = {
       { title: "Game design", text: "Core loops, controls, levels, cameras and pacing. Prototype fast, cut hard.", tools: ["Unity", "C#", "Level design", "Playtesting"] },
       { title: "3D art", text: "Stylised and hard-surface vehicles, characters and props, from blockout to hand-painted textures.", tools: ["Blender", "Hand-painted textures", "Clay and toon renders"] },
       { title: "2D art and animation", text: "Concept art, character painting, value and colour studies, game assets and frame-by-frame animation.", tools: ["Heavy Paint", "Photoshop", "Concept art", "2D animation"] },
-      { title: "Web and tools", text: "Playable browser games and full web apps, from first idea to live site.", tools: ["Three.js", "HTML, CSS, JavaScript", "Supabase"] },
+      { title: "Web and tools", text: "Playable browser games and full web apps, from first idea to live site.", tools: ["Three.js", "HTML, CSS, JavaScript", "Canvas and PWAs", "Supabase", "Cloudflare"] },
       { title: "Teaching", text: "English lessons and learning tools, designed around how students actually learn.", tools: ["Lesson design", "Learning apps"] }
     ],
     highlights: [
       { title: "Koi Quest: Reef Adventure", text: "Solo Unity game. Design, C#, levels and UI.", href: "#games" },
       { title: "The Kingdom of Eldonia", text: "Team project. Painted game assets.", href: "#games" },
       { title: "Scrap Racers", text: "My kart-style racer, in production.", href: "#top" },
+      { title: "Smudgeon Paint", text: "My open-source painting app, live at smudgeonpaint.com.", href: "#tools" },
       { title: "Paint the Lesson", text: "A full web app for English teachers.", href: "#tools" }
     ],
     passions: ["Game design", "3D modelling, low-poly and beyond", "Concept art", "Building creative tools (DASZFRAME)", "Racing games"]
