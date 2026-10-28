@@ -167,9 +167,11 @@ window.PORTFOLIO = {
   tools: [
     {
       title: "Smudgeon Paint", tagline: "A painting app that runs in the browser",
-      summary: "My open-source painting app: HeavyPaint's speed, Procreate-style brushes and Photoshop-style layers. 25 brushes with wet paint mixing, pressure and tilt, custom tips and grain, Procreate and Photoshop brush import, layers with masks and groups, liquify, animation with onion skin and a 3D sketch room. Works offline and installs on any device.",
+      summary: "My own painting app: HeavyPaint's speed, Procreate-style brushes and Photoshop-style layers. 25 brushes with wet paint mixing, pressure and tilt, custom tips and grain, Procreate and Photoshop brush import, layers with masks and groups, liquify, animation with onion skin and a 3D sketch room. Works offline and installs on any device.",
       images: ["assets/covers/smudgeon-1.jpg", "assets/covers/smudgeon-2.jpg", "assets/covers/smudgeon-3.jpg"],
-      link: "https://smudgeonpaint.com/", linkText: "Open Smudgeon Paint"
+      note: "In private testing: open it with an access key, or ask me for one.",
+      link: "https://smudgeonpaint.com/", linkText: "Open Smudgeon Paint",
+      request: "mailto:mikekahuhu@gmail.com?subject=Smudgeon%20Paint%20access&body=Hi%20Michael%2C%0A%0AI%27d%20like%20to%20try%20Smudgeon%20Paint.%20I%27ll%20use%20it%20on%3A%20", requestText: "Request access"
     },
     {
       title: "Psotek English", tagline: "English practice with a cheeky hedgehog",

@@ -282,7 +282,8 @@
       <div>
         <h3>${esc(t.title)}</h3><p class="tagline">${esc(t.tagline)}</p>
         <p class="sum">${esc(t.summary)}</p>
-        ${link(t.link, t.linkText || "Open", "btn btn-solid", I.out)}
+        ${t.note ? `<p class="tool-note">${esc(t.note)}</p>` : ""}
+        <div class="tool-links">${link(t.link, t.linkText || "Open", "btn btn-solid", I.out)}${t.request ? `<a class="btn" href="${esc(t.request)}">${I.mail}${esc(t.requestText || "Request access")}</a>` : ""}</div>
       </div>
     </article>`).join(""));
 

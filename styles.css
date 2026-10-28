@@ -359,3 +359,7 @@ dialog::backdrop { background: rgba(8,12,8,.82); backdrop-filter: blur(6px); }
 .about-cv { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin: 28px 0 0; }
 .about-cv > span { color: var(--fog); font-size: 14px; }
 .socials-text > span { display: contents; }
+
+/* tools: a second button (e.g. Request access) and a short note */
+.tool-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.tool-note { font-size: 14px; color: var(--lichen); margin: 0 0 12px; }
