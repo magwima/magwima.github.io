@@ -174,6 +174,12 @@ window.PORTFOLIO = {
       request: "mailto:mikekahuhu@gmail.com?subject=Smudgeon%20Paint%20access&body=Hi%20Michael%2C%0A%0AI%27d%20like%20to%20try%20Smudgeon%20Paint.%20I%27ll%20use%20it%20on%3A%20", requestText: "Request access"
     },
     {
+      title: "DASZFRAME", tagline: "Portrait collages and film looks, private by design",
+      summary: "A photo studio in the browser. It finds the face in a portrait and cuts it into 13 fragments for collage layouts, then grades it like film: Noir, Kodak, Fuji, halftone and more, with tone curves, a colour mixer, LUTs, background removal and face-guided retouch. Everything runs on your device, so photos never leave it.",
+      images: ["assets/covers/daszframe-1.jpg", "assets/covers/daszframe-2.jpg"],
+      link: "https://magwima.github.io/daszframe/", linkText: "Open DASZFRAME"
+    },
+    {
       title: "Psotek English", tagline: "English practice with a cheeky hedgehog",
       summary: "A practice website for my English students, starring Psotek the hedgehog, who cheers streaks and teases mistakes. Daily plans, A1–C2 vocabulary with Polish and Romanian help, a grammar lab, a weekly video and reading, exam practice and three word games. Formerly English Engine.",
       images: ["assets/covers/psotek-1.jpg", "assets/covers/psotek-2.jpg"],
