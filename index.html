@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Michael Kagwima · Games</title>
 <meta name="description" content="Games, 3D models and learning tools by Michael Kagwima (Dasz), game designer and developer in Rzeszów.">
-<meta name="theme-color" content="#121a11">
+<meta name="theme-color" content="#f6f8ef">
 <meta property="og:title" content="Michael Kagwima · Games">
 <meta property="og:description" content="Games for the browser and Unity, Blender models and learning tools.">
 <meta property="og:image" content="assets/scrap-racers.jpg">
@@ -18,16 +18,16 @@
 <svg class="grain" aria-hidden="true"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .6  0 0 0 0 .7  0 0 0 0 .5  0 0 0 .55 0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg>
 
 <header class="nav">
-  <a class="brand" href="#top" aria-label="Back to top"><span class="mark" aria-hidden="true"></span><span class="brand-name"></span></a>
+  <a class="brand" href="#home" aria-label="Home"><span class="mark" aria-hidden="true"></span><span class="brand-name"></span></a>
   <nav aria-label="Sections">
-    <a href="#games">Games</a><a href="#models">3D</a><a href="#sketchbook">Sketchbook</a><a href="#tools">Tools</a><a href="#about">About</a><a href="assets/Michael-Kagwima-CV.pdf" target="_blank" rel="noopener">CV</a>
+    <a href="#games">Games</a><a href="#models">3D</a><a href="#sketchbook">Sketchbook</a><a href="#tools">Tools</a><a href="#about">About</a><a href="#cv">CV</a>
   </nav>
   <div class="socials" data-socials></div>
 </header>
 
 <main id="top">
   <!-- Coming soon: the poster -->
-  <section class="soon" aria-labelledby="soon-title">
+  <section class="soon" data-page="home" aria-labelledby="soon-title">
     <figure class="poster">
       <img alt="" data-soon-img>
       <span class="poster-seal" data-soon-status></span>
@@ -43,13 +43,24 @@
   </section>
 
   <!-- Who -->
-  <section class="intro" aria-label="Introduction">
+  <section class="intro" data-page="home" aria-label="Introduction">
     <h2 class="intro-name"><span data-name></span> <small data-role></small></h2>
     <p class="intro-line" data-intro></p>
   </section>
 
+
+  <!-- Home: one door into each page -->
+  <section class="doors" data-page="home" aria-label="Pages">
+    <a class="door" href="#games"><img src="assets/covers/koi-1.jpg" alt="" loading="lazy"><span><b>Games</b><small>Unity, browser and team projects</small></span></a>
+    <a class="door" href="#models"><img src="assets/turntables/tugboat-final.jpg" alt="" loading="lazy"><span><b>3D</b><small>Turntables and models you can spin</small></span></a>
+    <a class="door" href="#sketchbook"><img src="assets/sketches/dilemma.jpg" alt="" loading="lazy"><span><b>Sketchbook</b><small>Animation, paintings and process</small></span></a>
+    <a class="door" href="#tools"><img src="assets/covers/smudgeon-1.jpg" alt="" loading="lazy"><span><b>Tools</b><small>Smudgeon Paint and Psotek</small></span></a>
+    <a class="door" href="#about"><img src="assets/me.jpg" alt="" loading="lazy" class="door-me"><span><b>About</b><small>Who I am and what I do</small></span></a>
+    <a class="door door-cv" href="#cv"><span class="door-cv-art" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span><b>CV</b><small>Experience, skills and education</small></span></a>
+  </section>
+
   <!-- Games -->
-  <section class="games" id="games" aria-labelledby="games-title">
+  <section class="games" id="games" data-page="games" aria-labelledby="games-title">
     <div class="section-head">
       <h2 id="games-title">Games</h2>
       <div class="filters" role="tablist" aria-label="Filter games" data-filters></div>
@@ -58,7 +69,7 @@
   </section>
 
   <!-- 3D -->
-  <section class="models" id="models" aria-labelledby="models-title">
+  <section class="models" id="models" data-page="models" aria-labelledby="models-title">
     <div class="section-head">
       <h2 id="models-title">3D work</h2>
       <p class="section-note">Drag to turn a model, scroll or pinch to zoom.</p>
@@ -69,7 +80,7 @@
   </section>
 
   <!-- Sketchbook -->
-  <section class="sketchbook" id="sketchbook" aria-labelledby="sketch-title" hidden>
+  <section class="sketchbook" id="sketchbook" data-page="sketchbook" aria-labelledby="sketch-title" hidden>
     <div class="section-head">
       <h2 id="sketch-title">Sketchbook</h2>
       <p class="section-note">Concept art, sketches and process. Click to see it big.</p>
@@ -78,23 +89,23 @@
   </section>
 
   <!-- Tools -->
-  <section class="tools" id="tools" aria-labelledby="tools-title">
+  <section class="tools" id="tools" data-page="tools" aria-labelledby="tools-title">
     <div class="section-head">
       <h2 id="tools-title">Tools I built</h2>
-      <p class="section-note">Apps I made for teaching and learning languages.</p>
+      <p class="section-note">A painting app for artists and an English app for my students.</p>
     </div>
     <div data-tools></div>
   </section>
 
   <!-- About -->
-  <section class="about" id="about" aria-labelledby="about-title">
+  <section class="about" id="about" data-page="about" aria-labelledby="about-title">
     <div class="about-photo" data-photo></div>
     <div class="about-body">
       <p class="about-kicker">About me</p>
       <h2 id="about-title" class="about-lead" data-about-lead></h2>
       <dl class="about-facts" data-facts></dl>
       <div class="about-text" data-about></div>
-      <p class="about-cv"><a class="btn btn-solid" href="assets/Michael-Kagwima-CV.pdf" target="_blank" rel="noopener">View my CV <span aria-hidden="true">↗</span></a><span>PDF, opens in a new tab</span></p>
+      <p class="about-cv"><a class="btn btn-solid" href="#cv">View my CV <span aria-hidden="true">→</span></a></p>
     </div>
     <div class="about-wide">
       <h3>What I do</h3>
@@ -105,6 +116,90 @@
       </div>
     </div>
   </section>
+
+  <!-- CV -->
+  <section class="cv" id="cv" data-page="cv" aria-labelledby="cv-title">
+    <div class="cv-top">
+      <div>
+        <p class="about-kicker">Curriculum vitae</p>
+        <h2 id="cv-title">Michael Kagwima</h2>
+        <p class="cv-role">Game Designer &amp; 3D Artist</p>
+      </div>
+      <div class="cv-contact">
+        <span>+48 532 264 287</span>
+        <a data-email></a>
+        <span>Rzeszów, Poland</span>
+        <button class="btn btn-small" type="button" data-print>Print or save as PDF</button>
+      </div>
+    </div>
+    <p class="cv-profile"><span>Game designer and 3D artist who takes games from first sketch to playable build: game and level design, Unity and C#, Blender models and hand-painted art. I've built a solo Unity game, painted assets for a team project, launched my own painting app and am now making my kart racer, Scrap Racers. I also teach English and have worked in sales and partner engagement, so I explain ideas clearly, work well in teams and deliver on deadlines.</span></p>
+    <div class="cv-cols">
+      <div class="cv-main"><section>
+    <h2>Selected projects</h2>
+    <div class="item"><div class="head"><b>Koi Quest: Reef Adventure</b><span>Solo · Unity, C#</span></div>
+      <ul><li>Designed and built a 3D underwater action game alone: controls, camera, levels, UI, main and pause menus.</li>
+      <li>Cut platform jumping for steering and dodging. On Unity Play.</li></ul></div>
+    <div class="item"><div class="head"><b>Scrap Racers</b><span>In production · Unity</span></div>
+      <ul><li>Designed three driver characters and modelled their trucks in Blender, textured in Heavy Paint.</li>
+      <li>Built a browser prototype, Vacuum Racer, to test the core racing loop.</li></ul></div>
+    <div class="item"><div class="head"><b>The Kingdom of Eldonia</b><span>Team · 2D pixel art</span></div>
+      <ul><li>Created game assets in Heavy Paint for a team-made Windows demo.</li></ul></div>
+    <div class="item"><div class="head"><b>Jazda! Polish Streets</b><span>Browser · Three.js</span></div>
+      <ul><li>Concept, design, levels and art direction for a 3D skating game.</li></ul></div>
+    <div class="item"><div class="head"><b>3D portfolio</b><span>Blender</span></div>
+      <ul><li>Stylised and hard-surface vehicles, characters, props, turntables.</li></ul></div>
+    <div class="item"><div class="head"><b>Smudgeon Paint</b><span>Web app · JavaScript, Canvas</span></div>
+      <ul><li>Launched a browser painting app at smudgeonpaint.com: pressure and tilt brushes, wet paint mixing, layers and masks, animation, a 3D sketch room and Procreate brush import.</li></ul></div>
+    <div class="item"><div class="head"><b>Paint the Lesson</b><span>Web app · JavaScript, Supabase</span></div>
+      <ul><li>Web app for teachers: lessons, courses, quizzes, homework.</li></ul></div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="item"><div class="head"><b>English Instructor</b><span>Current</span></div>
+      <p class="sub">English Break · Rzeszów, Poland</p>
+      <ul><li>Plan and teach lessons that build students' reading, writing and speaking.</li>
+      <li>Create teaching materials, notes, quizzes and practice exercises.</li>
+      <li>Track and report on each student's progress.</li></ul></div>
+    <div class="item"><div class="head"><b>English Instructor</b><span></span></div>
+      <p class="sub">Allright Pro · Online</p>
+      <ul><li>Taught online group classes for adults, adapted to each level.</li>
+      <li>Assessed progress through tests and tasks, following the school's curriculum.</li></ul></div>
+    <div class="item"><div class="head"><b>Assistant Producer</b><span></span></div>
+      <p class="sub">Trash Arts · Portsmouth, UK</p>
+      <ul><li>Produced the indie short <i>Decline</i> and secured its funding.</li>
+      <li>Background actor on the indie series <i>Right Here Right Now</i> and contributor to its creative discussions.</li></ul></div>
+  </section>
+      </div>
+      <aside class="cv-side"><section>
+    <h2>Skills</h2>
+    <div class="skill"><b>Game development</b><p>Unity, C#, Visual Studio Code, game and level design, prototyping, playtesting</p></div>
+    <div class="skill"><b>3D</b><p>Blender, hard-surface and stylised modelling, hand-painted textures, rendering</p></div>
+    <div class="skill"><b>2D art</b><p>Heavy Paint, Adobe Photoshop and Adobe Suite, concept art, character painting, 2D animation</p></div>
+    <div class="skill"><b>Web</b><p>HTML, CSS, JavaScript, Canvas 2D, Three.js, installable web apps (PWA), Supabase, Cloudflare</p></div>
+    <div class="skill"><b>People</b><p>Teaching and presenting, lesson design, sales and partner engagement, teamwork</p></div>
+  </section>
+  <section>
+    <h2>Education</h2>
+    <div class="edu"><b>Game Design and Management</b><p>University of Information Technology and Management · Rzeszów, Poland</p></div>
+    <div class="edu"><b>Computer Animation</b><p>International College Portsmouth · Portsmouth, UK</p></div>
+  </section>
+  <section>
+    <h2>Languages</h2>
+    <div class="edu"><b>English</b><p>Fluent</p></div>
+    <div class="edu"><b>Polish</b><p>Basic</p></div>
+  </section>
+  <section class="links">
+    <h2>Links</h2>
+    <p><a href="https://magwima.github.io">magwima.github.io</a></p>
+    <p><a href="https://mxyzptlk.artstation.com/">mxyzptlk.artstation.com</a></p>
+    <p><a href="https://www.linkedin.com/in/michael-kagwima-172569144">LinkedIn: Michael Kagwima</a></p>
+    <p><a href="https://github.com/magwima">github.com/magwima</a></p>
+    <p><a href="https://smudgeonpaint.com/">smudgeonpaint.com</a></p>
+  </section>
+      </aside>
+    </div>
+  </section>
 </main>
 
 <dialog class="lightbox" aria-label="Artwork"><button class="btn btn-small close" type="button" data-lb-close>Close</button><figure><img alt="" data-lb-img><video data-lb-vid muted loop playsinline controls hidden></video><figcaption data-lb-cap></figcaption></figure></dialog>
@@ -112,7 +207,7 @@
 
 <footer class="foot">
   <div class="foot-mail-wrap"><p class="foot-lead">Want to make something together?</p><a class="foot-mail" data-email></a></div>
-  <div class="foot-row"><div class="socials socials-text"><span data-socials-text></span><a href="assets/Michael-Kagwima-CV.pdf" target="_blank" rel="noopener">CV (PDF)</a></div><p class="foot-small">© <span data-year></span> <span data-name></span></p></div>
+  <div class="foot-row"><div class="socials socials-text"><span data-socials-text></span><a href="#cv">CV</a></div><p class="foot-small">© <span data-year></span> <span data-name></span></p></div>
 </footer>
 
 <!-- Play a game inside the page -->

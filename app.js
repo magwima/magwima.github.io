@@ -296,4 +296,23 @@
   fill("[data-disc]", A.disciplines.map((d, i) => `<article><span class="disc-n">0${i + 1}</span><h4>${esc(d.title)}</h4><p>${esc(d.text)}</p><ul>${d.tools.map(t => `<li>${esc(t)}</li>`).join("")}</ul></article>`).join(""));
   fill("[data-hl]", A.highlights.map(x => `<li><a href="${esc(x.href)}"><b>${esc(x.title)}</b><span>${esc(x.text)}</span></a></li>`).join(""));
   fill("[data-passions]", A.passions.map(p => `<li>${esc(p)}</li>`).join(""));
+
+  /* ---------- pages: each section is its own page in the same tab (#games, #models, #cv …) ---------- */
+  const PAGES = $$("main > section[data-page]"), NAMES = { home: "Games, 3D and tools", games: "Games", models: "3D work", sketchbook: "Sketchbook", tools: "Tools", about: "About", cv: "CV" };
+  const known = new Set(PAGES.map(s => s.dataset.page));
+  const show = () => {
+    let p = decodeURIComponent(location.hash.slice(1)) || "home";
+    if (p === "top") p = "home";
+    if (!known.has(p)) p = "home";
+    PAGES.forEach(s => { s.hidden = s.dataset.page !== p; });
+    $$(".nav nav a").forEach(a => a.getAttribute("href") === "#" + p ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
+    document.body.dataset.page = p;
+    document.title = `${D.name} · ${NAMES[p] || "Portfolio"}`;
+    window.scrollTo({ top: 0, behavior: "instant" });
+    const h = $(`main > section[data-page="${p}"] h1, main > section[data-page="${p}"] h2`);
+    if (h && p !== "home") { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
+  };
+  addEventListener("hashchange", show);
+  show();
+  $$("[data-print]").forEach(b => b.addEventListener("click", () => print()));
 })();

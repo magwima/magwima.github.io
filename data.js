@@ -178,18 +178,6 @@ window.PORTFOLIO = {
       summary: "A practice website for my English students, starring Psotek the hedgehog, who cheers streaks and teases mistakes. Daily plans, A1–C2 vocabulary with Polish and Romanian help, a grammar lab, a weekly video and reading, exam practice and three word games. Formerly English Engine.",
       images: ["assets/covers/psotek-1.jpg", "assets/covers/psotek-2.jpg"],
       link: "https://psotnyjez.com/", linkText: "Open Psotek English"
-    },
-    {
-      title: "Polski w kawałkach", tagline: "Polish in bite-size rounds",
-      summary: "A Polish-learning game for English speakers, as a web page and a Chrome extension: word tiles, verb forms, listening, dialogues and A2–B1 grammar with spaced review.",
-      images: ["assets/covers/polski-1.jpg", "assets/covers/polski-3.jpg"],
-      link: "https://chromewebstore.google.com/detail/emgbepamegcncjkmjjfbckelagmemhii", linkText: "Add to Chrome"
-    },
-    {
-      title: "Paint the Lesson", tagline: "A ready English lesson in two minutes, and a course platform for teachers",
-      summary: "Turns any article, PDF or YouTube transcript into a full lesson with worksheets, Canva slides and teacher notes. Lessons become courses with auto-marked quizzes, homework marking, timed release, progress tracking, live-lesson calendar and certificates. Built on Supabase.",
-      images: ["assets/covers/paint-1.jpg", "assets/covers/paint-2.jpg", "assets/covers/paint-3.jpg"],
-      link: "https://magwima.github.io/Paint-the-Lesson/", linkText: "Open Paint the Lesson"
     }
   ],
 
@@ -217,9 +205,9 @@ window.PORTFOLIO = {
     highlights: [
       { title: "Koi Quest: Reef Adventure", text: "Solo Unity game. Design, C#, levels and UI.", href: "#games" },
       { title: "The Kingdom of Eldonia", text: "Team project. Painted game assets.", href: "#games" },
-      { title: "Scrap Racers", text: "My kart-style racer, in production.", href: "#top" },
-      { title: "Smudgeon Paint", text: "My open-source painting app, live at smudgeonpaint.com.", href: "#tools" },
-      { title: "Paint the Lesson", text: "A full web app for English teachers.", href: "#tools" }
+      { title: "Scrap Racers", text: "My kart-style racer, in production.", href: "#home" },
+      { title: "Smudgeon Paint", text: "My painting app, live at smudgeonpaint.com.", href: "#tools" },
+      { title: "Psotek English", text: "English practice with a cheeky hedgehog, live at psotnyjez.com.", href: "#tools" }
     ],
     passions: ["Game design", "3D modelling, low-poly and beyond", "Concept art", "Building creative tools (DASZFRAME)", "Racing games"]
   }
