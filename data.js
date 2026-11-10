@@ -55,7 +55,7 @@ window.PORTFOLIO = {
         learned: "Removing a mechanic can make a game stronger, and testing in the real web build early catches problems the Unity editor hides."
       },
       unity: "https://play.unity.com/en/games/9616cf4a-6756-4f5a-a918-d318ec580c23/koi-quest-reef-adventure",
-      repo: "https://github.com/magwima/Koi-Quest--A-3D-Action-Adventure-Game"
+      repo: "https://github.com/magwima/Koi-Quest"
     },
     {
       id: "eldonia", title: "The Kingdom of Eldonia", year: "Demo", kind: "collab", engine: "Windows · 2D pixel art",
