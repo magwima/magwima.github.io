@@ -98,21 +98,21 @@ window.PORTFOLIO = {
       summary: "A word search for English learners. Drag across the grid to find hidden words, or switch to Meanings mode and hunt from definitions instead.",
       role: "Game design and the vocabulary practice behind it, built for my English students. I directed the build with Claude as my coding partner.",
       tools: ["Claude", "HTML5", "Web Audio"],
-      play: "https://psotnyjez.com/word-grove.html?solo#hunt", repo: "https://github.com/magwima/English-Engine"
+      play: "https://psotnyjez.com/word-grove.html?solo#hunt", page: "https://psotnyjez.com"
     },
     {
       id: "tilerush", title: "Tile Rush", year: 2026, kind: "personal", engine: "Browser · word game", art: "rush",
       summary: "A fast word game against the clock. Swipe across touching tiles in any direction to spell words, and long words grow a seed tile that clears its whole row and column.",
       role: "Game design and the vocabulary practice behind it, built for my English students. I directed the build with Claude as my coding partner.",
       tools: ["Claude", "HTML5", "Web Audio"],
-      play: "https://psotnyjez.com/word-grove.html?solo#rush", repo: "https://github.com/magwima/English-Engine"
+      play: "https://psotnyjez.com/word-grove.html?solo#rush", page: "https://psotnyjez.com"
     },
     {
       id: "crossplay", title: "Crossplay", year: 2026, kind: "personal", engine: "Browser · word game", art: "cross",
       summary: "Build a crossword against Moss, the computer opponent. Every new word scores, and the coloured bonus squares multiply your points.",
       role: "Game design, rules and the computer opponent's behaviour, built for my English students. I directed the build with Claude as my coding partner.",
       tools: ["Claude", "HTML5", "Web Audio"],
-      play: "https://psotnyjez.com/word-grove.html?solo#cross", repo: "https://github.com/magwima/English-Engine"
+      play: "https://psotnyjez.com/word-grove.html?solo#cross", page: "https://psotnyjez.com"
     }
   ],
 
